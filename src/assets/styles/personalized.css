@@ -1,0 +1,182 @@
+
+@import url(https://fonts.googleapis.com/css?family=Montserrat:300,400,600,700);
+@import url(https://fonts.googleapis.com/css?family=Arimo:300,400,400italic,700,700italic);
+
+.btton{
+    background-color:#19467d;
+    border-radius:50 px;
+    color: #ffffff;
+    margin-left: -15px;
+    width:300px;
+    text-align:center;
+}
+
+.btton .after{
+    display:none;
+}
+
+.btton:hover .before{
+    display:none;
+}
+
+.btton:hover{
+    background-color:rgb(113, 113, 233);
+    transition: background-color 1s ease-out 1ms;
+}
+
+.btton:hover .after{
+    display:inline;
+    color:white;
+}
+
+.highlighted{
+    background-color: #19467d;
+    color: #ffffff;
+}
+header .nav-col .navbad li a.highlighted{
+    background-color: #19467d;
+
+    color: white !important;
+    border: 1px solid #CCC;
+    border-radius: 50px;
+}
+
+.fa-facebook:hover{
+    color: #3b5998  !important;
+
+}
+
+.fa-instagram:hover{
+    color:#cd486b !important;
+    /* background-image: linear-gradient(red, yellow) !important; */
+}
+
+.text-indentation p{
+    text-indent:50px;
+}
+
+/* Used for text aligning in index.html page */
+.text-aligning-at-center{
+    text-align:center;
+}
+
+/* Dropdown Button in navigation bar */
+.dropbtn {
+    border: none;
+    cursor: pointer;
+  }
+  
+  /* Dropdown button on hover & focus */
+  .dropbtn:hover, .dropbtn:focus {
+    background-color: #2980B9;
+  }
+  
+  /* The container <div> - needed to position the dropdown content */
+  .dropdown {
+    position: relative;
+    display: inline-block;
+  }
+  
+  /* Dropdown Content (Hidden by Default) */
+  .dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: whitesmoke;
+    min-width: 160px;
+    height:39.9px;
+    box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+    z-index: 1;
+    border-radius:15px;
+  }
+  
+  /* Links inside the dropdown */
+  .dropdown-content a {
+    color: black;
+    /* padding: 12px 16px; */
+    text-decoration: none;
+    display: inline-block;
+  }
+  
+  /* Change color of dropdown links on hover */
+  .dropdown-content a:hover {background-color: #ddd;}
+  
+  /* Show the dropdown menu (use JS to add this class to the .dropdown-content container when the user clicks on the dropdown button) */
+  .show {display:block;}
+
+/* CSS for gallery */
+
+.container-gallery{
+	margin: 0 auto;
+  margin-top:30px;
+	max-width: 700px;
+	max-height: 100vh;
+	background-color: white;
+}
+
+
+/* Useful Classes */
+.xy-center {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}
+
+.transition {
+	transition: all 350ms ease-in-out;
+}
+
+.r-3-2 {
+	width: 100%;
+	padding-bottom: 66.667%;
+	background-color: #ddd;
+}
+
+.image-holder {
+	background-size: cover;
+	background-position: center center;
+	background-repeat: no-repeat;
+}
+
+/* Main Styles */
+.gallery-wrapper {
+	position: relative;
+	overflow: hidden;
+}
+
+.gallery {
+	position: relative;
+	white-space: nowrap;
+	font-size: 0;
+}
+
+.item-wrapper {
+	cursor: pointer;
+	width: 23%; /* arbitrary value */
+	display: inline-block;
+	background-color: white;
+}
+
+.gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; }
+
+.controls {
+	font-size: 30px;
+	border-top: none;
+  display:flex;
+}
+.move-btn {
+	display: inline-block;
+	width: 50%;
+	border: none;
+  color: black;
+	background-color: #f1f1f145;
+	padding: 0.2em 1.5em;
+}
+.move-btn:first-child {border-right: none;}
+.move-btn.left  { cursor: pointer }
+.move-btn.right { cursor: pointer }
+
+
+
+  
