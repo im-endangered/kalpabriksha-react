@@ -1,0 +1,84 @@
+.about-us {
+    background-color: #f9f9f9;
+    padding: 50px 0;
+  }
+  
+  .about-us h2 {
+    font-size: 2rem;
+    margin-bottom: 20px;
+  }
+  
+  .about-us p {
+    font-size: 1rem;
+    line-height: 1.8;
+    margin-bottom: 15px;
+    color: #333;
+    text-align: justify;
+  }
+  
+  .support-options {
+    text-align: center;
+  }
+  /* Fix for text alignment in support cards */
+.support-card p {
+    text-align: center; /* Override justification with center alignment */
+  }
+  
+  
+  .support-options h6 {
+    font-size: 1.2rem;
+    font-weight: bold;
+    margin-bottom: 20px;
+  }
+  
+  .support-grid {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+  
+  .support-card {
+    background: white;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    text-align: center;
+    transition: transform 0.2s ease-in-out;
+  }
+  
+  .support-card:hover {
+    transform: translateY(-5px);
+  }
+  
+  .support-card i {
+    font-size: 2rem;
+    margin-bottom: 10px;
+    color: #007bff;
+  }
+  
+  .support-card p {
+    font-size: 1rem;
+    font-weight: bold;
+    margin: 0;
+  }
+  
+  /* Volunteer Icon - Green */
+.support-card:nth-child(1) i {
+    color: #19467d; /* Green */
+  }
+  
+  /* Share About Us Icon - Red */
+  .support-card:nth-child(2) i {
+    color: #dc3545; /* Red */
+  }
+  
+  /* Donate Us Icon - Yellow */
+  .support-card:nth-child(3) i {
+    color: #ffc107; /* Yellow */
+  }
+  
+  /* Help Someone Icon - Blue */
+  .support-card:nth-child(4) i {
+    color: #28a745; /* Blue */
+  }
+  

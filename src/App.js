@@ -3,6 +3,8 @@ import './assets/styles/bootstrap.min.css'; // Bootstrap CSS
 import './assets/styles/animate.css'; // Animations
 import './assets/styles/personalized.css'; // Custom personalized styles
 import './assets/styles/style.css'; // Main style
+import 'slick-carousel/slick/slick.css';
+import 'slick-carousel/slick/slick-theme.css';
 
 
 import React from 'react';

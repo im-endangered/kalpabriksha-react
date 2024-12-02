@@ -1,0 +1,98 @@
+/* Slider Container */
+.slider-container {
+    position: relative;
+    width: 100%;
+    margin: auto;
+    overflow: hidden;
+  }
+  
+  /* Slider Images */
+  .slider-item {
+    position: relative; /* Ensure the caption can position relative to this */
+  }
+  
+  .slider-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+  }
+  
+  /* Caption Styles */
+  .slider-caption {
+    position: absolute;
+    bottom: 7%; /* Adjust position */
+    left: 5%;
+    color: white;
+    background: rgba(0, 0, 0, 0.6); /* Semi-transparent background */
+    padding: 10px 15px;
+    border-radius: 5px;
+    font-size: 1.5rem;
+    z-index: 10; /* Ensure it's above the image */
+    display: block; /* Ensure it's visible */
+    max-width: 80%; /* Optional: Avoid text overflowing */
+    word-wrap: break-word; /* Handle long words */
+  }
+  
+  /* Custom Arrow Styles */
+  .custom-arrow {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    font-size: 2rem;
+    color: white;
+    background: rgba(0, 0, 0, 0.5);
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 10;
+  }
+  
+  .custom-prev {
+    left: 10px;
+  }
+  
+  .custom-next {
+    right: 10px;
+  }
+
+  .custom-arrow:hover {
+    background: rgba(255, 255, 255, 0.8);
+    color: black;
+  }
+  
+  /* Dots */
+  .slick-dots {
+    bottom: 10px;
+    text-align: center;
+  }
+  
+  .slick-dots li button:before {
+    font-size: 10px;
+    color: rgba(255, 255, 255, 0.5);
+  }
+  
+  .slick-dots li.slick-active button:before {
+    color: white;
+  }
+  .slider-caption h3,
+.slider-caption p {
+  color: white; /* Explicitly set white color for text inside caption */
+  margin: 0; /* Ensure no additional margins */
+}
+  /* Custom Bubble Dots */
+  .dot {
+    width: 10px;
+    height: 10px;
+    background: rgba(255, 255, 255, 0.5);
+    border-radius: 50%;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li.slick-active .dot {
+    background: white; /* Highlight active dot */
+  }
+  
