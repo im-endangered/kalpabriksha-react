@@ -11,6 +11,7 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home'; // Ensure this matches your `Home.js` file path
 import BOD from './pages/bod';
+import About from './pages/about';
 
 function App() {
   return (
@@ -18,6 +19,7 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/bod" element={<BOD />} />
+        <Route path="/about" element={<About />} />
       </Routes>
     </Router>
   );

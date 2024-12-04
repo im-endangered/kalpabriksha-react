@@ -1,0 +1,50 @@
+.mission-vision {
+    display: flex;
+    flex-direction: column;
+    gap: 50px; /* Space between mission and vision sections */
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+  }
+  
+  .mission-vision .mission, .mission-vision .vision {
+    width: 60%; /* Center-align content */
+    margin: 0 auto; /* Ensure it's centered */
+  }
+  
+  .mission-vision .mission {
+    text-align: left; /* Align mission to the left */
+  }
+  
+  .mission-vision .vision {
+    text-align: right; /* Align vision to the right */
+  }
+  
+  .mission-vision h2 {
+    font-size: 1.8rem;
+    color: #333;
+    margin-bottom: 15px;
+  }
+  
+  .mission-vision p, .mission-vision li {
+    font-size: 1rem;
+    line-height: 1.8;
+    color: #555;
+    text-align: justify;
+  }
+  
+  .mission-vision ul {
+    padding-left: 20px;
+    list-style: disc;
+  }
+  
+  @media (max-width: 768px) {
+    .mission-vision .mission, .mission-vision .vision {
+      text-align: center;
+      width: 100%;
+    }
+  
+    .mission-vision ul {
+      padding-left: 0;
+      list-style: none;
+    }
+  }

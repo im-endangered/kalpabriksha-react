@@ -1,7 +1,10 @@
 import React from 'react';
+import { useLocation } from 'react-router-dom'; // Import useLocation
 import logo from '../assets/images/circular.png'; // Adjust the path based on your file location
 
 function Navbar() {
+  const location = useLocation(); // Get the current route
+
   return (
     <header className="container-fluid">
       <div className="header-top">
@@ -43,13 +46,27 @@ function Navbar() {
             </div>
             <div id="menu" className="col-lg-10 col-md-12 d-none d-lg-block nav-col">
               <ul className="navbad">
-                <li className="nav-item active"><a className="nav-link highlighted" href="/">Home</a></li>
-                <li className="nav-item"><a className="nav-link" href="/about_us">About</a></li>
-                <li className="nav-item"><a className="nav-link" href="/change">Change: Because We Can</a></li>
-                <li className="nav-item"><a className="nav-link" href="/gallery">Gallery</a></li>
-                <li className="nav-item"><a className="nav-link" href="/contact_us">Contact Us</a></li>
-                <li className="nav-item"><a className="nav-link" href="/donate_us">Donate Us</a></li>
-                <li className="nav-item"><a className="nav-link" href="/faq">FAQs</a></li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/' ? 'highlighted' : ''}`} href="/">Home</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/about' ? 'highlighted' : ''}`} href="/about">About</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/change' ? 'highlighted' : ''}`} href="/change">Change: Because We Can</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/gallery' ? 'highlighted' : ''}`} href="/gallery">Gallery</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/contact_us' ? 'highlighted' : ''}`} href="/contact_us">Contact Us</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/donate_us' ? 'highlighted' : ''}`} href="/donate_us">Donate Us</a>
+                </li>
+                <li className="nav-item">
+                  <a className={`nav-link ${location.pathname === '/faq' ? 'highlighted' : ''}`} href="/faq">FAQs</a>
+                </li>
               </ul>
             </div>
           </div>
