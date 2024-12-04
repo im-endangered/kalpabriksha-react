@@ -10,16 +10,16 @@ import 'slick-carousel/slick/slick-theme.css';
 import React from 'react';
 import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
 import Home from './pages/home'; // Ensure this matches your `Home.js` file path
+import BOD from './pages/bod';
 
 function App() {
   return (
     <Router>
       <Routes>
-        {/* Set Home as the default route */}
         <Route path="/" element={<Home />} />
+        <Route path="/bod" element={<BOD />} />
       </Routes>
     </Router>
   );
 }
-
 export default App;

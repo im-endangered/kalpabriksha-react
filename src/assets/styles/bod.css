@@ -1,0 +1,22 @@
+.bod-container {
+  padding: 50px 20px;
+  background-color: #f9f9f9;
+}
+
+.bod-heading {
+  text-align: center;
+  font-size: 1.8rem;
+  margin-bottom: 30px;
+  color: #333;
+}
+
+.social-icons a {
+  color: #007bff;
+  font-size: 1.5rem;
+  margin: 0 5px;
+  transition: color 0.3s;
+}
+
+.social-icons a:hover {
+  color: #0056b3;
+}

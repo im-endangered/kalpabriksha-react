@@ -1,0 +1,44 @@
+.header-separator {
+  background: linear-gradient(90deg, #f3f4f6, #e9ecef);
+  padding: 30px 0;
+  text-align: center;
+  border-bottom: 1px solid #ddd;
+}
+.breadcrumb{
+  background:linear-gradient(90deg, #f3f4f6, #e9ecef);
+}
+.header-separator h2 {
+  font-size: 2rem;
+  color: #343a40;
+  margin-bottom: 10px;
+  font-weight: bold;
+}
+
+.header-separator .breadcrumb {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 5px;
+  font-size: 0.9rem;
+  color: #343a40;
+}
+
+.header-separator .breadcrumb li {
+  display: inline;
+}
+
+.header-separator .breadcrumb a {
+  text-decoration: none;
+  color: #343a40; /* Neutral color for better blending */
+
+  transition: color 0.3s;
+}
+
+.header-separator .breadcrumb a:hover {
+  color: #0056b3;
+}
+
+.header-separator .breadcrumb .breadcrumb-separator {
+  margin: 0 5px;
+  color: #343a40;
+}
