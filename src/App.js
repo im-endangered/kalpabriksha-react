@@ -13,6 +13,7 @@ import Home from './pages/home'; // Ensure this matches your `Home.js` file path
 import BOD from './pages/bod';
 import About from './pages/about';
 import Change from './pages/change';
+import ContactUs from './pages/contact';
 
 function App() {
   return (
@@ -22,6 +23,7 @@ function App() {
         <Route path="/bod" element={<BOD />} />
         <Route path="/about" element={<About />} />
         <Route path="/cbwc" element={<Change />} />
+        <Route path="/contact" element={<ContactUs />} />
       </Routes>
     </Router>
   );
