@@ -62,7 +62,7 @@ function Navbar() {
                   <a className={`nav-link ${location.pathname === '/contact' ? 'highlighted' : ''}`} href="/contact">Contact Us</a>
                 </li>
                 <li className="nav-item">
-                  <a className={`nav-link ${location.pathname === '/donate_us' ? 'highlighted' : ''}`} href="/donate_us">Donate Us</a>
+                  <a className={`nav-link ${location.pathname === '/donate' ? 'highlighted' : ''}`} href="/donate">Donate Us</a>
                 </li>
                 <li className="nav-item">
                   <a className={`nav-link ${location.pathname === '/faq' ? 'highlighted' : ''}`} href="/faq">FAQs</a>

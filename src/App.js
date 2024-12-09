@@ -14,6 +14,7 @@ import BOD from './pages/bod';
 import About from './pages/about';
 import Change from './pages/change';
 import ContactUs from './pages/contact';
+import DonateUs from './pages/donate';
 
 function App() {
   return (
@@ -24,6 +25,7 @@ function App() {
         <Route path="/about" element={<About />} />
         <Route path="/cbwc" element={<Change />} />
         <Route path="/contact" element={<ContactUs />} />
+        <Route path="/donate" element={<DonateUs />} />
       </Routes>
     </Router>
   );
