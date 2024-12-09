@@ -16,6 +16,7 @@ import Change from './pages/change';
 import ContactUs from './pages/contact';
 import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
+import Gallery from './pages/gallery';
 
 function App() {
   return (
@@ -28,6 +29,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/donate" element={<DonateUs />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
   );
