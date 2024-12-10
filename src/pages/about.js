@@ -2,7 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
-// import "../assets/styles/about.css";
+import "../assets/styles/about.css";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import FlippingCard from '../components/FlippingCard';
 
