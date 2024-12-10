@@ -2,12 +2,9 @@ import React from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Slider from '../components/slider';
-import FlippingCard from '../components/FlippingCard';
 import '../assets/styles/home.css';
 
 function Home() {
-
-
   return (
     <div>
       <Navbar />
@@ -20,10 +17,14 @@ function Home() {
             <div className="col-md-6 about-text">
               <h2>About Kalpabriksha</h2>
               <p>
-                Kalpabriksha is a development platform that aims to provide growth and support to youth in Nepalese societies through various traditional as well as experimental initiatives. We come up with different plans and programs that promote the emotional, intellectual, and social growth of students and the community they live in. Embracing the principle of equity, inclusion, and youth innovation, this platform envisions becoming a change that makes a difference and stands for a cause. We focus on collecting youth voices on different communal issues and working together to achieve collective success. Kalpabriksha connects bright Nepalese students from all over the country to collaborate on projects that spark a positive change in their community and in the larger scope, the country itself.
-              </p>
-              <p>
-                The platform was established by three Nepalese students pursuing higher education in three different countries with one common goal, youth upliftment. Frustrated by the lack of opportunities there are for visionary youths in the country, we initiated the concept of Kalpabriksha as a Stage where every talent gets the attention and the care it deserves. There are a lot of programs currently being organized on various scales and scopes and other programs are being planned for the near future.
+                First things first, its <b>Kalpabriksha Nepal</b>, not Kalpabrikshya Nepal, not Kalpavriksha Nepal.
+                Kalpabriksha Nepal is a youth-led organization established in 2022 and officially registered as an NGO in
+                2024. The platform was established by three Nepalese students pursuing higher education in three
+                countries with one common goal: Youth upliftment in Nepalese societies. Frustrated by the lack of
+                opportunities for visionary youths in the country, Kalpabriksha was initiated as a place where every youth
+                talent gets the attention and care it deserves. Many youths still face harassment, abuse, and violence in
+                Nepal while many struggle with mental health issues. Kalpabriksha aims to provide support, guidance, and
+                opportunities to those youths and help them adjust to day-to-day life.
               </p>
             </div>
             <div className="col-md-6 support-options">
@@ -51,26 +52,40 @@ function Home() {
         </div>
       </section>
 
-      {/* Mission and Vision Section */}
-      <section className="mission-vision">
+      {/* Objectives, Mission, and Vision Section */}
+      <section className="objectives-mission-vision">
+        <div className="objectives">
+          <h2>Objectives</h2>
+          <ul>
+            <li>1. To promote intellectual development and establish partnerships between the youth and different classes.</li>
+            <li>2. To enhance the skills of the youth and promote youth expression of thoughts, feelings, and experiences.</li>
+            <li>3. Conduct programs aimed at improving the mental health status of the youth in Nepalese societies.</li>
+            <li>4. Organizing awareness programs to fight against harassment and abuse of youth.</li>
+            <li>5. Conduct programs to empower youth and engage them in fighting against social evils.</li>
+            <li>6. Collaborate with like-minded organizations to collectively achieve common goals.</li>
+            <li>7. Building a network of support systems to help youth overcome challenges and obstacles.</li>
+          </ul>
+        </div>
         <div className="mission">
           <h2>Our Mission</h2>
           <ul>
-            <li>Providing mentorship programs and educational resources that connect experienced professionals with young people to provide guidance, support, and to empower youth.</li>
-            <li>Collaborating with schools and community organizations to create safe and inclusive space for young people.</li>
-            <li>Providing youths with workshops and training sessions on essential skills such as communication, leadership, and problem-solving.</li>
-            <li>Advocating for policies and initiatives that address the needs and rights of young individuals.</li>
-            <li>Creating opportunities for young people to engage in community service and make a social impact.</li>
-            <li>Developing comprehensive educational programs that cover various areas of personal and professional development.</li>
+            <li>1. Providing mentorship programs and educational resources that connect experienced professionals with youth.</li>
+            <li>2. Collaborating with schools and community organizations to create safe and inclusive spaces for youth.</li>
+            <li>3. Providing workshops and training sessions on communication, leadership, and problem-solving.</li>
+            <li>4. Advocating for policies and initiatives that address the needs and rights of young individuals.</li>
+            <li>5. Creating opportunities for youth to engage in community service and make a social impact.</li>
+            <li>6. Developing comprehensive educational programs for personal and professional development.</li>
           </ul>
         </div>
         <div className="vision">
           <h2>Our Vision</h2>
           <p>
-            Creating a supportive environment where youth can thrive and reach their full potential, ensuring opportunities for their voices to be heard, inspiring and guiding them to become leaders and changemakers in their communities, and building a network of support systems to help them overcome challenges.
+            Creation of a supportive platform where every youth can thrive and reach their full potential, ensuring
+            opportunities for their voices to be heard, inspiring and guiding them to become leaders and changemakers in
+            their communities, and building a network of support systems to help them overcome challenges.
           </p>
         </div>
-      </section>    
+      </section>
       <Footer />
     </div>
   );
