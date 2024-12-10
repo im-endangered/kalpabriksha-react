@@ -70,10 +70,7 @@ function Home() {
             Creating a supportive environment where youth can thrive and reach their full potential, ensuring opportunities for their voices to be heard, inspiring and guiding them to become leaders and changemakers in their communities, and building a network of support systems to help them overcome challenges.
           </p>
         </div>
-      </section>
-
-    
-
+      </section>    
       <Footer />
     </div>
   );

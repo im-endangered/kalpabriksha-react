@@ -7,6 +7,8 @@ import slide1 from '../assets/images/slider/yuwantar.jpg';
 import slide2 from '../assets/images/slider/jyotidaya.jpg';
 import slide3 from '../assets/images/slider/teamworking.jpg';
 import slide4 from '../assets/images/slider/gunjan.jpg';
+import slide5 from '../assets/images/slider/chitwan.png';
+import slide6 from '../assets/images/slider/pratidhwani.png';
 
 // Custom Arrow Components
 function NextArrow(props) {
@@ -53,7 +55,7 @@ function HomeSlider() {
         <div className="slider-item">
           <img src={slide2} alt="Jyotidaya" />
           <div className="slider-caption">
-            <h3>Change: Because We Can</h3>
+            <h3>Change: Because We Can at Jyotidaya School</h3>
           </div>
         </div>
         <div className="slider-item">
@@ -65,7 +67,19 @@ function HomeSlider() {
         <div className="slider-item">
           <img src={slide4} alt="Gunjan" />
           <div className="slider-caption">
-            <h3>Gunjan 2.0: Celebrating Together</h3>
+            <h3>Gunjan 2.0: Celebrating Second Anniversary</h3>
+          </div>
+        </div>
+        <div className="slider-item">
+          <img src={slide5} alt="CBWC Chitwan" />
+          <div className="slider-caption">
+            <h3>CBWC at Orchid School, Chitwan</h3>
+          </div>
+        </div>
+        <div className="slider-item">
+          <img src={slide6} alt="Pratidhwani" />
+          <div className="slider-caption">
+            <h3>Project Pratidhwani at Damauli, Tanahun.</h3>
           </div>
         </div>
       </Slider>
