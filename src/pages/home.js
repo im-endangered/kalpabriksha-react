@@ -4,36 +4,9 @@ import Footer from '../components/footer';
 import Slider from '../components/slider';
 import FlippingCard from '../components/FlippingCard';
 import '../assets/styles/home.css';
-import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
-
-import nitamImage from '../assets/images/team/nitam.png';
-import pankajImage from '../assets/images/team/pankaj.png';
-import rejinImage from '../assets/images/team/REjin.jpg';
-
 
 function Home() {
-  const navigate = useNavigate(); // Initialize useNavigate
 
-  const cofounders = [
-    {
-      frontImage: nitamImage,
-      frontName: 'Nitamraj Poudel',
-      frontTitle: 'Co-founder',
-      backText: 'A person with no imagination has no wings',
-    },
-    {
-      frontImage: pankajImage,
-      frontName: 'Pankaj Bhattarai',
-      frontTitle: 'Co-Founder',
-      backText: 'Be the change that you wish to see in the world.',
-    },
-    {
-      frontImage: rejinImage,
-      frontName: 'Rejin Nepal',
-      frontTitle: 'Co-founder',
-      backText: 'The moon will guide you through the night with her brightness, but she will always dwell in the darkness, in order to be seen.',
-    },
-  ];
 
   return (
     <div>
@@ -99,31 +72,7 @@ function Home() {
         </div>
       </section>
 
-      {/* Meet the Co-founders Section */}
-      <section className="cofounders-section">
-        <h2>Meet our Co-founders</h2>
-        <p>Meet the talented individuals who bring our vision to life.</p>
-        <div className="cofounders-grid">
-          {cofounders.map((cofounder, index) => (
-            <FlippingCard
-              key={index}
-              frontImage={cofounder.frontImage}
-              frontName={cofounder.frontName}
-              frontTitle={cofounder.frontTitle}
-              backText={cofounder.backText}
-            />
-          ))}
-         
-        </div>
-        <div className="text-center mt-4">
-         <button
-            className="btn btn-primary"
-            onClick={() => navigate('/bod')}
-         >
-         Board of Directors
-         </button>
-      </div>
-      </section>
+    
 
       <Footer />
     </div>
