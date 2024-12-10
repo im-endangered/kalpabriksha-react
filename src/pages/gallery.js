@@ -4,19 +4,18 @@ import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
 import "../assets/styles/gallery.css";
 
-
-import image2 from '../assets/images/events/2.png';
-import image3 from '../assets/images/events/3.png';
-import image4 from '../assets/images/events/4.jpg';
-import image1 from '../assets/images/events/1.png';
-import image5 from '../assets/images/events/5.jpg';
-import image6 from '../assets/images/events/6.jpg';
-import image7 from '../assets/images/events/7.jpg';
-import image8 from '../assets/images/events/8.jpg';
-import image9 from '../assets/images/events/9.jpg';
-import image10 from '../assets/images/events/10.jpg';
-import image11 from '../assets/images/events/11.jpg';
-import image12 from '../assets/images/events/12.jpg';
+import image1 from '../assets/images/events/cbwc-1.jpg';
+import image2 from '../assets/images/events/cbwc-2.jpg';
+import image3 from '../assets/images/events/cbwc-3.jpg';
+import image4 from '../assets/images/events/cbwc-4.jpg';
+import image5 from '../assets/images/events/cbwc-5.jpg';
+import image6 from '../assets/images/events/cbwc-6.jpg';
+import image7 from '../assets/images/events/cbwc-7.jpg';
+import image8 from '../assets/images/events/cbwc-8.jpg';
+import image9 from '../assets/images/events/cbwc-feedback.png';
+import image10 from '../assets/images/events/cbwc-yuwantar.jpg';
+import image11 from '../assets/images/events/hgatm-1.png';
+import image12 from '../assets/images/events/hgatm-2.png';
 
 
 const galleryImages = [
