@@ -1,19 +1,25 @@
 .school-carousel {
-    margin: 20px auto;
-    margin-top: 0;
-    max-width: 80%;
-    text-align: center;
-  }
-  
-  .carousel-image {
-    max-height: 100%;
-    max-width: 100%;
-    border-radius: 10px;
-  }
-  
-  .carousel-caption {
-    font-size: 1.5rem;
-    color: white;
-    margin-top: 10px;
-  }
-  
+  margin: 20px auto;
+  margin-top: 0;
+  max-width: 80%;
+  text-align: center;
+}
+
+.carousel-item {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.carousel-image {
+  width: 100%; /* Ensures the image fills the container width */
+  aspect-ratio: 16 / 9; /* Maintains a consistent 16:9 aspect ratio */
+  object-fit: cover; /* Ensures the image fills the area without distortion */
+  border-radius: 10px;
+}
+
+.carousel-caption {
+  font-size: 1.5rem;
+  color: white;
+  margin-top: 10px;
+}

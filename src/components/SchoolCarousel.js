@@ -5,9 +5,9 @@ import "slick-carousel/slick/slick-theme.css";
 import "../assets/styles/carousel.css";
 
 
-import school1 from "../assets/images/events/5.jpg"
-import school2 from "../assets/images/events/6.jpg"
-import school3 from "../assets/images/events/7.jpg"
+import school1 from "../assets/images/events/cbwc-2.jpg"
+import school2 from "../assets/images/events/cbwc-3.jpg"
+import school3 from "../assets/images/events/cbwc-4.jpg"
 
 const schoolData = [
   { image: school1, name: "Heartland Academy" },
