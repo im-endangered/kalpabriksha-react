@@ -3,12 +3,15 @@
   margin-top: 0;
   max-width: 80%;
   text-align: center;
+  position: relative; /* Needed for proper positioning of captions */
 }
 
 .carousel-item {
   display: flex;
+  flex-direction: column; /* Ensures captions stack below images */
   justify-content: center;
   align-items: center;
+  position: relative; /* Needed for positioning within the item */
 }
 
 .carousel-image {
@@ -19,7 +22,27 @@
 }
 
 .carousel-caption {
-  font-size: 1.5rem;
+  font-size: 1.2rem; /* Smaller font size for better mobile fit */
   color: white;
-  margin-top: 10px;
+  margin-top: -40px; /* Negative margin to position it over the image */
+  background-color: rgba(0, 0, 0, 0.6); /* Adds a dark background for better readability */
+  padding: 10px 15px;
+  border-radius: 8px;
+  max-width: 80%; /* Limits caption width to avoid text overflow */
+  position: absolute; /* Positions it over the image */
+  bottom: 10px; /* Ensures it stays near the bottom of the image */
+  left: 50%;
+  transform: translateX(-50%); /* Centers the text horizontally */
+  text-align: center;
+}
+
+@media (max-width: 768px) {
+  .carousel-caption {
+    font-size: 1rem; /* Further reduce font size for smaller screens */
+    padding: 8px 12px;
+  }
+
+  .carousel-image {
+    aspect-ratio: 4 / 3; /* Adjusts aspect ratio for better fit on smaller devices */
+  }
 }
