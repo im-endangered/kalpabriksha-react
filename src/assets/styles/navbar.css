@@ -1,3 +1,65 @@
+/* Mobile Menu Styles */
+.nav-col {
+  display: none; /* Hidden by default */
+}
+
+#menu-jk {
+  background: #fff;
+  position: relative;
+}
+
+/* Desktop Styles */
+@media (min-width: 992px) {
+  .nav-col {
+    display: block; /* Show desktop menu */
+  }
+
+  .small-menu {
+    display: none; /* Hide mobile menu toggle button */
+  }
+}
+
+/* Mobile Styles */
+@media (max-width: 991px) {
+  .nav-col {
+    display: none; /* Hide desktop menu in mobile */
+  }
+
+  .small-menu {
+    display: block; /* Show mobile menu toggle button */
+    color: #686968;
+    font-size: 1.8rem;
+    position: absolute;
+    right: 15px;
+    top: 15px;
+  }
+
+  .navbad {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 10px;
+  }
+
+  .navbad li {
+    width: 100%;
+    padding: 10px 15px;
+  }
+
+  .navbad li a {
+    width: 100%;
+    display: block;
+    color: #686968;
+    text-align: left;
+  }
+}
+
+/* Highlight Current Page */
+.navbad .highlighted {
+  background-color: #19467d;
+  color: #fff;
+  border-radius: 50px;
+}
+
 /* Responsive Navbar for Mobile */
 @media (max-width: 991px) {
     header .header-bottom {
