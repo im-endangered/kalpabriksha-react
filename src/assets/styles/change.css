@@ -43,28 +43,31 @@
 .achievements-section {
   position: relative;
   color: white;
-  padding: 60px 20px;
-  /* background: url("../images/events/1.png") no-repeat center center; */
+  padding: 0;
+  background: url("../images/slider/jyotidaya.jpg") no-repeat center center;
   background-size: cover;
 }
 
-.achievements-overlay h2{
-  color: white;
-}
 .achievements-overlay {
-  background: rgba(0, 0, 0, 0.6);
+  background: rgba(0, 0, 0, 0.7); /* Slightly darker for better readability */
   padding: 40px;
   border-radius: 10px;
 }
 
 .achievements-overlay h2 {
   font-size: 2rem;
+  font-weight: 600;
   margin-bottom: 20px;
+  color: #fff;
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow for readability */
 }
 
 .achievements-overlay p {
-  font-size: 1rem;
+  font-size: 1.2rem;
   margin-bottom: 40px;
+  color: #e0e0e0; /* Slightly lighter text for better contrast */
+  text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
+  line-height: 1.6;
 }
 
 .achievements-grid {
@@ -80,20 +83,35 @@
   border-radius: 10px;
   color: #333;
   font-weight: bold;
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.2);
 }
 
 .achievement-item h3 {
-  font-size: 1.8rem;
+  font-size: 2rem;
   margin-bottom: 10px;
+  color: #000;
 }
 
 .achievement-item span {
-  font-size: 1rem;
+  font-size: 1.2rem;
+  color: #555;
 }
 
-/* Button Hover Effect */
-button:hover {
-  background: goldenrod !important;
-  color: white !important;
-  border: none;
+/* Responsive Adjustments */
+@media (max-width: 768px) {
+  .achievements-overlay h2 {
+    font-size: 1.5rem;
+  }
+
+  .achievements-overlay p {
+    font-size: 1rem;
+  }
+
+  .achievement-item h3 {
+    font-size: 1.8rem;
+  }
+
+  .achievement-item span {
+    font-size: 1rem;
+  }
 }

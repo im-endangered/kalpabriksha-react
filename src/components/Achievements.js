@@ -6,7 +6,11 @@ const Achievements = () => {
     <div className="achievements-section">
       <div className="achievements-overlay">
         <h2>Our Achievements in Numbers</h2>
-        <p>We can talk for a long time about advantages of our sessions. Here are some facts in order to know how far we have reached in our mission.</p>
+        <p>
+          We can talk for a long time about advantages of our sessions. Here
+          are some facts in order to know how far we have reached in our
+          mission.
+        </p>
         <div className="achievements-grid">
           <div className="achievement-item">
             <h3>40+</h3>
