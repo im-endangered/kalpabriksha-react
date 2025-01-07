@@ -1,10 +1,10 @@
 import React, { useState } from "react";
-import { useLocation } from "react-router-dom";
+import { NavLink, Link, useLocation } from "react-router-dom";
 import logo from "../assets/images/circular.png";
 
 function Navbar() {
-  const location = useLocation();
   const [isMenuOpen, setMenuOpen] = useState(false);
+  const location = useLocation();
 
   const toggleMenu = () => {
     setMenuOpen(!isMenuOpen);
@@ -34,12 +34,20 @@ function Navbar() {
                   <small>Follow Us</small>:
                 </li>
                 <li>
-                  <a href="https://www.facebook.com/kalpabriksha.np" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.facebook.com/kalpabriksha.np"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fab fa-facebook"></i>
                   </a>
                 </li>
                 <li>
-                  <a href="https://www.instagram.com/kalpabriksha.np/" target="_blank" rel="noreferrer">
+                  <a
+                    href="https://www.instagram.com/kalpabriksha.np/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
                     <i className="fab fa-instagram"></i>
                   </a>
                 </li>
@@ -52,10 +60,15 @@ function Navbar() {
         <div className="container">
           <div className="row nav-row">
             <div className="col-lg-2 col-md-12 logo">
-              <a href="/">
+              <Link to="/">
                 <img src={logo} alt="logo" width="75" height="75" />
-              </a>
-              <button className="small-menu d-lg-none" onClick={toggleMenu}>
+              </Link>
+              <button
+                className={`small-menu d-lg-none ${
+                  isMenuOpen || location.pathname === "/" ? "bg-blue" : ""
+                }`}
+                onClick={toggleMenu}
+              >
                 &#9776;
               </button>
             </div>
@@ -65,60 +78,39 @@ function Navbar() {
             >
               <ul className="navbad">
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/" ? "highlighted" : ""}`}
-                    href="/"
-                  >
+                  <NavLink to="/" className={({isActive})=>`nav-link ${isActive ? "highlighted" : ""}`} exact>
                     Home
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/about" ? "highlighted" : ""}`}
-                    href="/about"
-                  >
+                  <NavLink to="/about" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     About
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/cbwc" ? "highlighted" : ""}`}
-                    href="/cbwc"
-                  >
+                  <NavLink to="/cbwc" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     Change: Because We Can
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/gallery" ? "highlighted" : ""}`}
-                    href="/gallery"
-                  >
+                  <NavLink to="/gallery" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     Gallery
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/contact" ? "highlighted" : ""}`}
-                    href="/contact"
-                  >
+                  <NavLink to="/contact" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     Contact Us
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/donate" ? "highlighted" : ""}`}
-                    href="/donate"
-                  >
+                  <NavLink to="/donate" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     Donate Us
-                  </a>
+                  </NavLink>
                 </li>
                 <li>
-                  <a
-                    className={`nav-link ${location.pathname === "/faq" ? "highlighted" : ""}`}
-                    href="/faq"
-                  >
+                  <NavLink to="/faq" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
                     FAQs
-                  </a>
+                  </NavLink>
                 </li>
               </ul>
             </div>
