@@ -15,7 +15,7 @@ const FlippingCard = ({ frontImage, frontName, frontTitle, backText }) => {
         <div className="flipping-card-front">
           <img src={frontImage} alt={frontName} className="flipping-card-image" />
           <div className="flipping-card-content">
-            <h4>{frontName}</h4>
+            <h4 >{frontName}</h4>
             <p>{frontTitle}</p>
           </div>
         </div>
