@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../assets/styles/FlippingCard.css";
 
-const FlippingCard = ({ frontImage, frontName, frontTitle, backText }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-  };
-
+const FlippingCard = ({ frontImage, frontName, frontTitle, backText, isFlipped, handleFlip }) => {
   return (
     <div className={`flipping-card ${isFlipped ? "flipped" : ""}`} onClick={handleFlip}>
       <div className="flipping-card-inner">
@@ -15,7 +9,7 @@ const FlippingCard = ({ frontImage, frontName, frontTitle, backText }) => {
         <div className="flipping-card-front">
           <img src={frontImage} alt={frontName} className="flipping-card-image" />
           <div className="flipping-card-content">
-            <h4 >{frontName}</h4>
+            <h4>{frontName}</h4>
             <p>{frontTitle}</p>
           </div>
         </div>
