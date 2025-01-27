@@ -36,6 +36,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Nitamraj Poudel</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/nitamraj-poudel/"
@@ -78,6 +79,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Monika Shrestha</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/monikashrestha/"
@@ -120,6 +122,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Pankaj Bhattarai</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/pankajbhattarai/"
@@ -162,6 +165,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Abhinab Khanal</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/abhinab-khanal-336059257/"
@@ -204,6 +208,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Shekhar Thapa</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/shekhar-thapa-7810732aa/"
@@ -246,6 +251,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Vijaya Lakshmi Sharma</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/vijaya-laxmi-sharma/"
@@ -288,6 +294,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Ronik Basnet</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/ronik-basnet-69b327217/"
@@ -330,6 +337,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Ashlesha Shrestha</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/shrestha-ashlesha/"
@@ -372,6 +380,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Siddhant Silwal</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/siddhant-silwal-91a00b24b/"
@@ -414,6 +423,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Niroj Neupane</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/nirojneupane/"
@@ -456,6 +466,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Shrishna Thapa</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/shrisna-thapa-893947264/"
@@ -498,6 +509,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Sujay Kumar Pal</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/pal-sujay-66171228a/"
@@ -540,6 +552,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Pratik Luitel</span>
+          {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/pratik-luitel/"
