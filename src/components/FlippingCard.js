@@ -1,13 +1,7 @@
-import React, { useState } from "react";
+import React from "react";
 import "../assets/styles/FlippingCard.css";
 
-const FlippingCard = ({ frontImage, frontName, frontTitle, backText }) => {
-  const [isFlipped, setIsFlipped] = useState(false);
-
-  const handleFlip = () => {
-    setIsFlipped(!isFlipped);
-  };
-
+const FlippingCard = ({ frontImage, frontName, frontTitle, backText, isFlipped, handleFlip }) => {
   return (
     <div className={`flipping-card ${isFlipped ? "flipped" : ""}`} onClick={handleFlip}>
       <div className="flipping-card-inner">

@@ -1,61 +1,71 @@
 .flipping-card {
-    width: 250px;
-    height: 350px;
-    perspective: 1000px;
-    margin: 20px;
-    cursor: pointer;
-  }
-  
-  .flipping-card-inner {
-    width: 100%;
-    height: 100%;
-    position: relative;
-    transform-style: preserve-3d;
-    transition: transform 0.8s;
-  }
-  
-  .flipping-card.flipped .flipping-card-inner {
-    transform: rotateY(180deg);
-  }
-  
-  .flipping-card-front,
-  .flipping-card-back {
-    position: absolute;
-    width: 100%;
-    height: 100%;
-    backface-visibility: hidden;
-    border-radius: 10px;
-    overflow: hidden;
-    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
-  }
-  
-  .flipping-card-front {
-    background-color: #ffffff;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
-  }
-  
-  .flipping-card-front .flipping-card-image {
-    width: 100%;
-    height: 70%;
-    object-fit: cover;
-  }
-  
-  .flipping-card-front .flipping-card-content {
-    padding: 10px;
-    text-align: center;
-  }
-  
-  .flipping-card-back {
-    background-color: #19467d;
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transform: rotateY(180deg);
-    text-align: center;
-    padding: 20px;
-  }
-  
+  width: 250px;
+  height: 350px;
+  perspective: 1000px;
+  margin: 20px;
+  cursor: pointer;
+}
+
+.flipping-card-inner {
+  width: 100%;
+  height: 100%;
+  position: relative;
+  transform-style: preserve-3d;
+  transition: transform 0.8s;
+}
+
+.flipping-card.flipped .flipping-card-inner {
+  transform: rotateY(180deg);
+}
+
+.flipping-card-front,
+.flipping-card-back {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  backface-visibility: hidden;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.flipping-card-front {
+  background-color: #ffffff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.flipping-card-front .flipping-card-image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+.flipping-card-front .flipping-card-content {
+  padding: 10px;
+  text-align: center;
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: rgba(36, 77, 144, 0.8);
+  color: white;
+  text-align: center;
+  padding: 10px;
+}
+
+.flipping-card-content h4{
+  color: #ffffff;
+}
+
+.flipping-card-back {
+  background-color: #19467d;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transform: rotateY(180deg);
+  text-align: center;
+  padding: 20px;
+}
