@@ -1,4 +1,4 @@
-import React from "react";
+import React, {useState} from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
@@ -12,6 +12,13 @@ import pankajImage from '../assets/images/team/pankaj.png';
 import rejinImage from '../assets/images/team/REjin.jpg';
 
 const About = () => {
+
+  const [flippedCardIndex, setFlippedCardIndex] = useState(null);
+  
+    const handleFlip = (index) => {
+      setFlippedCardIndex(flippedCardIndex === index ? null : index);
+    };
+
   const navigate = useNavigate(); // Initialize useNavigate
 
   const cofounders = [
@@ -115,6 +122,8 @@ const About = () => {
               frontName={cofounder.frontName}
               frontTitle={cofounder.frontTitle}
               backText={cofounder.backText}
+              isFlipped={flippedCardIndex === index}
+              handleFlip={() => handleFlip(index)}
             />
           ))}
          
