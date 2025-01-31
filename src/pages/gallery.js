@@ -1,4 +1,4 @@
-import React, { useState } from "react";
+import React, { useState, useEffect } from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
@@ -36,6 +36,15 @@ const galleryImages = [
 const Gallery = () => {
   const [lightboxOpen, setLightboxOpen] = useState(false);
   const [currentImage, setCurrentImage] = useState(0);
+
+  useEffect(() => {
+    const items = document.querySelectorAll(".gallery-item");
+  
+    items.forEach((item) => {
+      const rowSpan = Math.ceil(item.querySelector("img").naturalHeight / 10);
+      item.style.gridRowEnd = `span ${rowSpan}`;
+    });
+  }, []);
 
   const openLightbox = (index) => {
     setCurrentImage(index);
