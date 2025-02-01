@@ -157,8 +157,8 @@ header .nav-col .navbad li a.highlighted{
 	background-color: white;
 }
 
-.gallery-item { opacity: 0.5; }
-.gallery-item.active { opacity: 1; }
+/* .gallery-item { opacity: 0.5; }
+.gallery-item.active { opacity: 1; } */
 
 .controls {
 	font-size: 30px;
