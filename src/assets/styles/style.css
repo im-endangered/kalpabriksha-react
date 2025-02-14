@@ -395,7 +395,6 @@ header {
 @media screen and (max-width: 1050px) {
   .slider-captions {
     bottom: 100px !important; }
-
   width: 90%;
   text-align: center;
   float: none;
@@ -655,6 +654,8 @@ header {
 
 /* ===================================== Fooer CSS ================================== */
 .footer {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   padding: 50px;
   padding-bottom: 50px;
   background-color: #1e2436;
