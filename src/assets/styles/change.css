@@ -7,40 +7,73 @@
 }
 
 /* Program Director Styles */
-.program-director-card {
+.director-card {
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
-  background: #f9f9f9;
-  border-radius: 8px;
+  text-align: center;
+  background: #fff;
   padding: 20px;
-  margin-top: 20px;
-  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  border-radius: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  max-width: 300px;
+  margin: auto;
 }
 
-.director-image {
-  width: 150px;
-  height: 150px;
+.director-card img {
+  width: 120px;
+  height: 120px;
   border-radius: 50%;
-  margin-right: 20px;
-}
-
-.director-details h4 {
+  object-fit: cover;
   margin-bottom: 10px;
+}
+
+.director-card h4 {
   font-size: 1.2rem;
+  font-weight: bold;
+  margin-bottom: 5px;
 }
 
-.director-details a {
-  color: #007bff;
-  text-decoration: none;
+.director-card p {
+  font-size: 0.9rem;
+  color: #555;
 }
 
-.director-details a:hover {
-  text-decoration: underline;
+/* 📱 Responsive Design */
+@media (min-width: 600px) {
+  .director-card {
+    max-width: 500px;
+    display: flex;
+    flex-direction: row;
+    text-align: left;
+    align-items: center;
+    padding: 20px;
+    gap: 15px;
+  }
+
+  .director-card img {
+    width: 100px;
+    height: 100px;
+    margin-bottom: 0;
+  }
+}
+
+@media (min-width: 900px) {
+  .director-card {
+    max-width: 700px;
+    padding: 30px;
+  }
+
+  .director-card img {
+    width: 120px;
+    height: 120px;
+  }
 }
 
 /* Achievements Section */
 .achievements-section {
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
   position: relative;
   color: white;
   padding: 0;
@@ -51,7 +84,8 @@
 .achievements-overlay {
   background: rgba(0, 0, 0, 0.7); /* Slightly darker for better readability */
   padding: 40px;
-  border-radius: 10px;
+  border-top-left-radius: 40px;
+  border-top-right-radius: 40px;
 }
 
 .achievements-overlay h2 {
@@ -77,9 +111,9 @@
 }
 
 .achievement-item {
+  color: white;
   text-align: center;
   padding: 20px;
-  background: rgba(255, 255, 255, 0.9);
   border-radius: 10px;
   color: #333;
   font-weight: bold;
@@ -89,12 +123,14 @@
 .achievement-item h3 {
   font-size: 2rem;
   margin-bottom: 10px;
-  color: #000;
+  color: white;
 }
 
 .achievement-item span {
+  border-top: 1.5px solid gray;
   font-size: 1.2rem;
-  color: #555;
+  margin-top: 4px;
+  color: white;
 }
 
 /* Responsive Adjustments */

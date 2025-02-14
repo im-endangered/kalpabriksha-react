@@ -5,11 +5,25 @@
   overflow: hidden;
 }
 
+.testimonial-card {
+  background-color: #f9f9f9;
+  border-radius: 10px;
+  height: 200px;
+  width: 400px;
+  padding: 20px;
+  margin: 10px;
+  box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
+  flex: 0 1 30%; /* Ensures responsive width */
+  text-align: center;
+  overflow: hidden; /* Prevents unwanted scroll */
+}
+
 .carousel-container {
   display: flex;
+  justify-content: center;
   gap: 20px; 
   overflow-x: auto; 
-  scroll-behavior: smooth; 
+  scroll-behavior: smooth;
   padding-bottom: 20px; 
 }
 

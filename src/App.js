@@ -17,9 +17,13 @@ import ContactUs from './pages/contact';
 import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
+import LocomotiveScroll from 'locomotive-scroll';
 
 function App() {
-  return (
+    // eslint-disable-next-line
+    const locomotiveScroll = new LocomotiveScroll();
+    
+    return (
     <Router>
       <Routes>
         <Route path="/" element={<Home />} />
