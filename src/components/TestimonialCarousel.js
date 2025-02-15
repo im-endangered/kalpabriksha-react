@@ -47,7 +47,7 @@ const TestimonialCarousel = () => {
           </div>
         ))}
       </Slider>
-    </div>
+      </div>
   );
 };
 

@@ -2,6 +2,7 @@ import React from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
+import Mission from "./mission.js";
 import SchoolCarousel from "../components/SchoolCarousel";
 import TestimonialCarousel from "../components/TestimonialCarousel";
 import VolunteerCarousel from "../components/VolunteerCarousel.js";
@@ -19,6 +20,7 @@ const Change = () => {
       />
       <SchoolCarousel />
       <TestimonialCarousel />
+      <Mission />
       <VolunteerCarousel />      
       <ProgramDirector />
       <Achievements />

@@ -7,7 +7,7 @@ const ProgramDirector = () => {
   return (
     <div className="program-director-section">
       <h3>Program Director</h3>
-      <div className="program-director-card">
+      <div className="director-card">
         <img
           src={abhinabImage} // Replace with the actual path to the director's image
           alt="Program Director"
