@@ -19,8 +19,8 @@ const Change = () => {
         breadcrumb={[{ name: "Home", link: "/" }, { name: "Change: Because We Can" }]}
       />
       <SchoolCarousel />
-      <TestimonialCarousel />
       <Mission />
+      <TestimonialCarousel />
       <VolunteerCarousel />      
       <ProgramDirector />
       <Achievements />
