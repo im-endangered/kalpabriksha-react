@@ -40,7 +40,7 @@ function Home() {
                 </div>
                 <div className="support-card">
                   <i className="fas fa-donate"></i>
-                  <p>Donate us</p>
+                  <a href="/donate"><p>Donate us</p></a>
                 </div>
                 <div className="support-card">
                   <i className="fas fa-hands-helping"></i>
