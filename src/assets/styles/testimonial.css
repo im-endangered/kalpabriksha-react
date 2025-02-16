@@ -1,6 +1,6 @@
 .testimonial-carousel {
   margin: 20px auto;
-  max-width: 80%;
+  width: 80%;
   text-align: center;
   overflow: hidden;
 }
@@ -9,16 +9,10 @@
   background-color: #f9f9f9;
   border-radius: 10px;
   padding: 20px;
-  margin: 10px;
+  margin: 10px auto;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center;
-  height: 200px; /* Keep height as specified */
-  width: 300px; /* Ensure all cards are visible */
-  flex: 0 0 auto; /* Prevent cards from shrinking */
+  height: 200px; 
 }
 
 .carousel-container {
@@ -49,11 +43,7 @@
   padding: 20px;
   margin: 10px;
   box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.1);
-  display: flex;
-  flex-direction: column;
-  justify-content: center;
   text-align: center;
-  align-items: center;
   height: 600px; /* Keep height as specified */
   width: 400px; /* Ensure all cards are visible */
   flex: 0 0 auto; /* Prevent cards from shrinking */
@@ -68,4 +58,59 @@
 .testimonial-author {
   font-weight: bold;
   color: #333;
+}
+
+
+.slick-list {
+  overflow: hidden;
+  padding: 0 !important; /* Adds padding to ensure proper spacing */
+}
+
+.slick-slide {
+  padding: 0 10px; /* Adds consistent spacing between slides */
+}
+
+@media (max-width: 1024px) {
+  .testimonial-card, .volunteer-card {
+    width: 280px; /* Adjust width for tablets */
+    height: auto; /* Allow flexible height */
+    padding: 15px;
+  }
+}
+
+@media (max-width: 768px) {
+  .testimonial-card, .volunteer-card {
+    width: 250px; /* Reduce width for smaller devices */
+    font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .testimonial-text {
+    font-size: 14px; /* Reduce text size */
+    margin-bottom: 15px;
+  }
+
+  .testimonial-author {
+    font-size: 14px;
+  }
+}
+
+@media (max-width: 480px) {
+  .carousel-container {
+    gap: 10px; /* Reduce spacing */
+    padding-bottom: 10px; /* Adjust padding */
+  }
+
+  .testimonial-card, .volunteer-card {
+    width: 90%; /* Use most of the screen width */
+    height: auto;
+    padding: 10px;
+  }
+
+  .testimonial-text {
+    font-size: 13px;
+  }
+
+  .testimonial-author {
+    font-size: 12px;
+  }
 }
