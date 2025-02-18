@@ -112,6 +112,11 @@ function Navbar() {
                     FAQs
                   </NavLink>
                 </li>
+                <li>
+                  <NavLink to="/download" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
+                    Downloads
+                  </NavLink>
+                </li>
               </ul>
             </div>
           </div>

@@ -18,6 +18,7 @@ import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
 import LocomotiveScroll from 'locomotive-scroll';
+import Downloads from './pages/Downloads';
 
 function App() {
     // eslint-disable-next-line
@@ -33,6 +34,7 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/donate" element={<DonateUs />} />
         <Route path="/faq" element={<FAQ />} />
+        <Route path="/download" element={<Downloads />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>
