@@ -22,7 +22,7 @@ const Downloads = () => {
   return (
     <>
       <Navbar />
-      <HeaderSeparator title="Download" breadcrumb={[{ name: 'Home', link: '/' }, { name: 'Download' }]} />
+      <HeaderSeparator title="Downloads" breadcrumb={[{ name: 'Home', link: '/' }, { name: 'Downloads' }]} />
       <div className="container py-4">
         <div className="mb-4 d-flex align-items-center gap-3">
           <label htmlFor="category" className="form-label fw-bold">Filter by Category:</label>
