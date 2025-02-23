@@ -1,9 +1,10 @@
-import React, {useState} from "react";
+import React, { useState } from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import FlippingCard from "../components/FlippingCard";
 import Footer from "../components/footer";
 import "../assets/styles/bod.css";
+import LocomotiveScroll from "locomotive-scroll";
 
 import nitamImage from '../assets/images/team/nitam.png';
 import monikaImage from "../assets/images/team/monika.png";
@@ -20,6 +21,8 @@ import sujayImage from "../assets/images/team/sujay.png";
 import pratikImage from "../assets/images/team/pratik.jpg";
 
 const BOD = () => {
+  // eslint-disable-next-line
+  const locomotiveScroll = new LocomotiveScroll();
 
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
 
