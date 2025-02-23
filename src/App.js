@@ -18,7 +18,7 @@ import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
 import LocomotiveScroll from 'locomotive-scroll';
-import Downloads from './pages/Downloads';
+import Downloads from './pages/downloads';
 
 function App() {
     // eslint-disable-next-line
