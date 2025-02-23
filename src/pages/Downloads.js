@@ -2,7 +2,6 @@ import React, { useState } from 'react';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import HeaderSeparator from '../components/HeaderSeparator';
-// import 'bootstrap/dist/css/bootstrap.min.css';
 
 const downloadsData = [
   { id: 1, title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
