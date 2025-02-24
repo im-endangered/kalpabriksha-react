@@ -6,6 +6,8 @@
   margin: 20px 0;
 }
 
+
+
 /* Program Director Styles */
 .director-card {
   display: flex;
@@ -97,7 +99,7 @@
 }
 
 .achievements-overlay p {
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-bottom: 40px;
   color: #e0e0e0; /* Slightly lighter text for better contrast */
   text-shadow: 1px 1px 4px rgba(0, 0, 0, 0.6); /* Subtle text shadow */
@@ -129,7 +131,7 @@
 }
 
 .achievement-item span {
-  font-size: 1.2rem;
+  font-size: 16px;
   margin-top: 4px;
   color: white;
 }
@@ -141,7 +143,7 @@
   }
 
   .achievements-overlay p {
-    font-size: 1rem;
+    font-size: 16px;
   }
 
   .achievement-item h3 {
@@ -149,6 +151,6 @@
   }
 
   .achievement-item span {
-    font-size: 1rem;
+    font-size: 16px;
   }
 }
