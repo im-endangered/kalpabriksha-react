@@ -74,7 +74,7 @@ function Navbar() {
             </div>
             <div
               id="menu"
-              className={`col-lg-10 nav-col ${isMenuOpen ? "d-block" : "d-none d-lg-block"}`}
+              className={`col-lg-12 col-md-9 nav-col ${isMenuOpen ? "d-block" : "d-none d-lg-block"}`}
             >
               <ul className="navbad">
                 <li>
