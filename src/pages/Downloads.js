@@ -7,6 +7,9 @@ const downloadsData = [
   { id: 1, title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
   { id: 2, title: 'PAN Certificate', category: 'Legal and Compliance', link: '/assets/pan-certificate.pdf' },
   { id: 3, title: 'Registration Certificate', category: 'Legal and Compliance', link: '/assets/registration-certificate.pdf' },
+  { id: 4, title: 'Annual Summary 2022', category: 'Yearly Report', link: '/assets/annual_summary_2022.pdf' },
+  { id: 5, title: 'Annual Summary 2080', category: 'Yearly Report', link: '/assets/annual_summary_2080.pdf' },
+  { id: 6, title: 'We Listen and We Dont Judge', category: 'Event Report', link: '/assets/report_we_listen_and_we_dont_judge.pdf' },
 ];
 
 const Downloads = () => {
