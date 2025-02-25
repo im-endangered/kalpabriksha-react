@@ -426,7 +426,7 @@ const BOD = () => {
       backText: (
         <>
           <span className="back-text">Niroj Neupane</span>
-          {/* <span className="back-text">"Quote"</span> */}
+          <span className="back-text">"Shaktimaan Shaktimaan"</span>
           <div className="social-icons">
             <a
               href="https://www.linkedin.com/in/nirojneupane/"

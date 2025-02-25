@@ -71,6 +71,8 @@
   padding: 0 10px; /* Adds consistent spacing between slides */
 }
 
+
+
 @media (max-width: 1024px) {
   .testimonial-card, .volunteer-card {
     width: 280px; /* Adjust width for tablets */
@@ -83,6 +85,47 @@
   .testimonial-card, .volunteer-card {
     width: 250px; /* Reduce width for smaller devices */
     font-size: 14px; /* Adjust font size for better readability */
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: 10px;
+    display: block;
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    list-style: none;
+    text-align: center;
+  }
+  
+  .slick-dots li {
+    display: inline-block;
+    margin: 0 5px;
+  }
+  
+  .slick-dots li button {
+    font-size: 10px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: #ddd;
+    border: none;
+    cursor: pointer;
+    outline: none;
+    transition: background 0.3s ease;
+  }
+  
+  .slick-dots li.slick-active button {
+    background: #333;
+  }
+
+  .slick-dots {
+    position: absolute;
+    bottom: -30px; /* Move dots below the box */
+  }
+
+  .testimonial-carousel {
+    padding-bottom: 50px; /* Ensure enough space for the dots */
   }
 
   .testimonial-text {
