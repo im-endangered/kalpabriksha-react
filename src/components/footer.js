@@ -22,12 +22,14 @@ function Footer() {
             <address>
               Kalpabriksha Nepal <br />
               Regd no: 6002 <br />
+              PAN: 622048826 <br />
+              SWC Affiliation No: 57817 <br />
               Chapagaun, Lalitpur <br />
               Nepal <br />
               Phone: <a href="tel:+9779843389412">+977 9843389412</a> <br />
               Email: <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a> <br />
               Web: <a href="http://www.kalpabriksha.org">www.kalpabriksha.org</a> <br />
-              &copy; 2024 Kalpabriksha | All rights reserved.
+              &copy; 2025 Kalpabriksha | All rights reserved.
             </address>
           </div>
         </div>
