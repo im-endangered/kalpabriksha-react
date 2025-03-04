@@ -1,6 +1,17 @@
 .bod-container {
   padding: 50px 20px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
   background-color: #f9f9f9;
+
+}
+
+.bod-grid{
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .bod-heading {
@@ -71,3 +82,10 @@
   height: 20px;
 }
 
+@media (max-width: 768px) {
+  .bod-grid {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+  }
+}

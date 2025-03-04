@@ -1,5 +1,6 @@
 import React from 'react';
 import Slider from 'react-slick';
+import "../assets/styles/carousel.css";
 import '../assets/styles/slider.css';
 
 // Import slider images
@@ -29,9 +30,42 @@ function PrevArrow(props) {
   );
 }
 
+const programs = [
+  {
+    image: slide1,
+    name: 'Yuwantar',
+    caption: 'Yuwantar: First Annual Event'
+  },
+  {
+    image: slide2,
+    name: 'Change Because We Can',
+    caption: 'Change: Because We Can at Jyotidaya School',
+  },
+  {
+    image: slide3,
+    name: 'Team Prep',
+    caption: 'Team Preparation for Yuwantar'
+  },
+  {
+    image: slide4,
+    name: 'Gunjan: 2.0',
+    caption: 'Gunjan 2.0: Celebrating Second Anniversary'
+  },
+  {
+    image: slide5,
+    name: 'CBWC at Orchid School, Chitwan',
+    caption: 'CBWC at Orchid School, Chitwan',
+  },
+  {
+    image: slide6,
+    name: 'Project Pratidhwani',
+    caption: 'Project Pratidhwani at Damauli, Tanahun.'
+  }
+]
+
 function HomeSlider() {
   const settings = {
-    dots: true, // Enable dots
+    dots: true,
     infinite: true,
     speed: 500,
     slidesToShow: 1,
@@ -40,48 +74,17 @@ function HomeSlider() {
     autoplaySpeed: 3000,
     nextArrow: <NextArrow />,
     prevArrow: <PrevArrow />,
-    customPaging: () => <div className="dot" />,
   };
 
   return (
     <div className="slider-container">
       <Slider {...settings}>
-        <div className="slider-item">
-          <img src={slide1} alt="Yuwantar" />
-          <div className="slider-caption">
-            <h3>Yuwantar: First Annual Event</h3>
+        {programs.map((program, index) => (
+          <div key={index} className="carousel-item">
+            <img src={program.image} alt={program.name} className="slider-image" />
+            <p className="carousel-caption">{program.caption}</p>
           </div>
-        </div>
-        <div className="slider-item">
-          <img src={slide2} alt="Jyotidaya" />
-          <div className="slider-caption">
-            <h3>Change: Because We Can at Jyotidaya School</h3>
-          </div>
-        </div>
-        <div className="slider-item">
-          <img src={slide3} alt="Teamworking" />
-          <div className="slider-caption">
-            <h3>Team Preparation for Yuwantar</h3>
-          </div>
-        </div>
-        <div className="slider-item">
-          <img src={slide4} alt="Gunjan" />
-          <div className="slider-caption">
-            <h3>Gunjan 2.0: Celebrating Second Anniversary</h3>
-          </div>
-        </div>
-        <div className="slider-item">
-          <img src={slide5} alt="CBWC Chitwan" />
-          <div className="slider-caption">
-            <h3>CBWC at Orchid School, Chitwan</h3>
-          </div>
-        </div>
-        <div className="slider-item">
-          <img src={slide6} alt="Pratidhwani" />
-          <div className="slider-caption">
-            <h3>Project Pratidhwani at Damauli, Tanahun.</h3>
-          </div>
-        </div>
+        ))}
       </Slider>
     </div>
   );
