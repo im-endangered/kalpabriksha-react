@@ -7,7 +7,11 @@ function Footer() {
         <div className="row">
           <div className="col-md-4 col-sm-12">
             <h2>About Us</h2>
-            <p>Kalpabriksha is a development platform that aims to provide growth and support to youth in Nepalese societies through various traditional as well as experimental initiatives.</p>
+            <p>Kalpabriksha is a development platform that aims to provide growth and support to youth in Nepalese societies through various traditional as well as experimental initiatives.
+            <br/><br/>Regd no: 6002 <br />
+              PAN: 622048826 <br />
+              SWC Affiliation No: 57817 <br />
+            </p>
           </div>
           <div className="col-md-4 col-sm-12">
             <h2>Useful Links</h2>
@@ -20,12 +24,8 @@ function Footer() {
           <div className="col-md-4 col-sm-12">
             <h2>Contact Us</h2>
             <address>
-              Kalpabriksha Nepal <br />
-              Regd no: 6002 <br />
-              PAN: 622048826 <br />
-              SWC Affiliation No: 57817 <br />
-              Chapagaun, Lalitpur <br />
-              Nepal <br />
+              Kalpabriksha Nepal <br />        
+              Chapagaun, Lalitpur, Nepal <br />
               Phone: <a href="tel:+9779843389412">+977 9843389412</a> <br />
               Email: <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a> <br />
               Web: <a href="http://www.kalpabriksha.org">www.kalpabriksha.org</a> <br />
