@@ -20,9 +20,9 @@ const DonateUs = () => {
           <div className="donate-card">
             <img src={bankImage} alt="Bank Transfer" />
             <p><b>Bank Transfer</b></p>
-            <p>Pankaj Bhattarai</p>
-            <p>Account No: 11405080050913</p>
-            <p>NIMB Bank</p>
+            <p>Details coming soon</p>
+            <p>Soon</p>
+            <p>Bank Name</p>
           </div>
           <div className="donate-card">
             <a href="https://www.gofundme.com/f/change-because-we-can" target="_blank" rel="noopener noreferrer">
