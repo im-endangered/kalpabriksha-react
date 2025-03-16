@@ -85,7 +85,7 @@ const BOD = () => {
           {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
-              href="#"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="icons linkedin"
