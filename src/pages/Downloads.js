@@ -4,10 +4,7 @@ import Footer from '../components/footer';
 import HeaderSeparator from '../components/HeaderSeparator';
 
 const downloadsData = [
-  { title: 'SWC Affiliation Certificate', category: 'Legal and Compliance', link: '/assets/SWC_Affilation_Certificate.pdf' },
   { title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
-  { title: 'PAN Certificate', category: 'Legal and Compliance', link: '/assets/pan.pdf' },
-  { title: 'Registration Certificate', category: 'Legal and Compliance', link: '/assets/reg_cert.pdf' },
   { title: 'Annual Summary 2022', category: 'Yearly Report', link: '/assets/annual_summary_2022.pdf' },
   { title: 'Annual Summary 2080', category: 'Yearly Report', link: '/assets/annual_summary_2080.pdf' },
   { title: 'We Listen and We Dont Judge', category: 'Event Report', link: '/assets/report_we_listen_and_we_dont_judge.pdf' },
