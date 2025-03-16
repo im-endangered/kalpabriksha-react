@@ -26,7 +26,7 @@ function Footer() {
             <address>
               Kalpabriksha Nepal <br />        
               Chapagaun, Lalitpur, Nepal <br />
-              Phone: <a href="tel:+9779843389412">+977 9843389412</a> <br />
+              Phone: <a href="tel:+9779843389412">+977 9763684743</a> <br />
               Email: <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a> <br />
               Web: <a href="http://www.kalpabriksha.org">www.kalpabriksha.org</a> <br />
               &copy; 2025 Kalpabriksha | All rights reserved.

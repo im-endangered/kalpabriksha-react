@@ -24,7 +24,7 @@ function Navbar() {
                 </li>
                 <li>
                   <i className="fas fa-phone-volume"></i>
-                  <a href="tel:+9779843389412">+977 9843389412</a>
+                  <a href="tel:+9779843389412">+977 9763684743</a>
                 </li>
               </ul>
             </div>
