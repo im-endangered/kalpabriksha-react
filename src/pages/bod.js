@@ -85,7 +85,7 @@ const BOD = () => {
           {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
-              href="https://www.linkedin.com/in/monikashrestha/"
+              href="https://www.linkedin.com/"
               target="_blank"
               rel="noopener noreferrer"
               className="icons linkedin"
@@ -100,7 +100,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:monika@kalpabriksha.org.np"
+              href="mailto:monika@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -143,7 +143,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:panjak@kalpabriksha.org.np"
+              href="mailto:pankaj@kalpabriksha.org"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -186,7 +186,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:abhinab@kalpabriksha.org.np"
+              href="mailto:abhinab@kalpabriksha.org"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -206,7 +206,7 @@ const BOD = () => {
     {
       id: 5,
       frontImage: shekharImage,
-      frontName: "Sekhar Thapa",
+      frontName: "Shekhar Thapa",
       frontTitle: "Treasurer",
       backText: (
         <>
@@ -229,7 +229,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:shekhar@kalpabriksha.org.np"
+              href="mailto:shekhar@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -253,7 +253,7 @@ const BOD = () => {
       frontTitle: "Executive",
       backText: (
         <>
-          <span className="back-text">Vijaya Lakshmi Sharma</span>
+          <span className="back-text">Vijaya Laxmi Sharma</span>
           {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
@@ -272,7 +272,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:vijaya@kalpabriksha.org.np"
+              href="mailto:vijaya@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -315,7 +315,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:ronik@kalpabriksha.org.np"
+              href="mailto:ronikbasnet@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -358,7 +358,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:ashlesha@kalpabriksha.org.np"
+              href="mailto:ashlesha@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -401,7 +401,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:siddhant@kalpabriksha.org.np"
+              href="mailto:siddhant@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -429,7 +429,7 @@ const BOD = () => {
           <span className="back-text">"Shaktimaan Shaktimaan"</span>
           <div className="social-icons">
             <a
-              href="https://www.linkedin.com/in/nirojneupane/"
+              href="https://www.linkedin.com/in/niroj-neupane-khatri-39a282339/"
               target="_blank"
               rel="noopener noreferrer"
               className="icons linkedin"
@@ -444,7 +444,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:niroj@kalpabriksha.org.np"
+              href="mailto:knirojneupane@kalpabriksha.org"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -468,7 +468,7 @@ const BOD = () => {
       frontTitle: "Executive",
       backText: (
         <>
-          <span className="back-text">Shrishna Thapa</span>
+          <span className="back-text">Shrisna Thapa</span>
           {/* <span className="back-text">"Quote"</span> */}
           <div className="social-icons">
             <a
@@ -487,7 +487,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:shrishna@kalpabriksha.org.np"
+              href="mailto:shrisna@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -530,7 +530,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:sujay@kalpabriksha.org.np"
+              href="mailto:sujay@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"
@@ -573,7 +573,7 @@ const BOD = () => {
             </a>
 
             <a
-              href="mailto:pratik@kalpabriksha.org.np"
+              href="mailto:pratik@kalpabrikshanepal.org.np"
               target="_blank"
               rel="noopener noreferrer"
               className="icons email"

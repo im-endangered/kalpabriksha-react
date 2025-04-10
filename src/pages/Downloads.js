@@ -4,10 +4,11 @@ import Footer from '../components/footer';
 import HeaderSeparator from '../components/HeaderSeparator';
 
 const downloadsData = [
-  { id: 1, title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
-  { id: 2, title: 'PAN Certificate', category: 'Legal and Compliance', link: '/assets/pan-certificate.pdf' },
-  { id: 3, title: 'Registration Certificate', category: 'Legal and Compliance', link: '/assets/registration-certificate.pdf' },
-];
+  { title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
+  { title: 'Annual Summary 2022', category: 'Yearly Report', link: '/assets/annual_summary_2022.pdf' },
+  { title: 'Annual Summary 2080', category: 'Yearly Report', link: '/assets/annual_summary_2080.pdf' },
+  { title: 'We Listen and We Dont Judge', category: 'Event Report', link: '/assets/report_we_listen_and_we_dont_judge.pdf' },
+].map((item, index) => ({ ...item, id: index + 1 })); 
 
 const Downloads = () => {
   const [category, setCategory] = useState('All');

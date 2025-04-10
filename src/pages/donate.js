@@ -5,7 +5,7 @@ import Footer from "../components/footer";
 import "../assets/styles/donateus.css";
 
 import bankImage from "../assets/images/donations/bank.png"
-import gofundme from "../assets/images/donations/gofundme.png"
+// import gofundme from "../assets/images/donations/gofundme.png"
 const DonateUs = () => {
   return (
     <div>
@@ -20,17 +20,17 @@ const DonateUs = () => {
           <div className="donate-card">
             <img src={bankImage} alt="Bank Transfer" />
             <p><b>Bank Transfer</b></p>
-            <p>Pankaj Bhattarai</p>
-            <p>Account No: 11405080050913</p>
-            <p>NIMB Bank</p>
+            <p>Details coming soon</p>
+            <p>Soon</p>
+            <p>Bank Name</p>
           </div>
-          <div className="donate-card">
+          {/* <div className="donate-card">
             <a href="https://www.gofundme.com/f/change-because-we-can" target="_blank" rel="noopener noreferrer">
               <img src={gofundme} alt="GoFundMe" />
               <p><b>Go Fund Me</b></p>
               <p>Click to Donate</p>
             </a>
-          </div>
+          </div> */}
         </div>
         <div className="donate-description">
           <h3>Your donations are used for these meaningful causes:</h3>
