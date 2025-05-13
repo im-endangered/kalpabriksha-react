@@ -179,4 +179,80 @@ header .nav-col .navbad li a.highlighted{
 
 
 
-  
+  .navbar-container {
+  font-family: sans-serif;
+}
+
+.navbar-top {
+  background-color: #f8f9fa;
+  padding: 8px 0;
+  font-size: 0.9rem;
+}
+
+.contact-info a,
+.social-links a {
+  color: #333;
+  text-decoration: none;
+}
+
+.navbar-main {
+  background-color: white;
+  padding: 10px 0;
+  border-top: 1px solid #ddd;
+  border-bottom: 1px solid #ddd;
+}
+
+.navbar-logo img {
+  vertical-align: middle;
+}
+
+.nav-toggle {
+  font-size: 24px;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: none;
+}
+
+.nav-links.show {
+  display: block;
+  width: 100%;
+}
+
+@media (min-width: 992px) {
+  .nav-links {
+    display: block !important;
+  }
+}
+
+.nav-links ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.nav-item {
+  margin: 5px 10px;
+}
+
+.nav-link {
+  padding: 8px 16px;
+  border-radius: 20px;
+  background-color: #f1f1f1;
+  font-weight: 600;
+  text-decoration: none;
+  color: #333;
+  transition: all 0.2s ease;
+}
+
+.nav-link:hover {
+  background-color: #e0e0e0;
+}
+
+.nav-link.highlighted {
+  background-color: #13315c;
+  color: white;
+}
