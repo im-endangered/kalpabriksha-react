@@ -21,6 +21,7 @@ const DonateUs = () => {
             <img src={bankImage} alt="Bank Transfer" />
             <p><b>Bank Transfer</b></p>
             <p>Acc no : 00401040251617</p>
+            <p>Acc name : Kalpabriksha Nepal</p>
             <p>NIMB Bank</p>
             <p>Pulchok Branch</p>
           </div>
