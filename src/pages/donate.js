@@ -15,14 +15,14 @@ const DonateUs = () => {
         breadcrumb={[{ name: "Home", link: "/" }, { name: "Donate Us" }]}
       />
       <div className="donate-container">
-        <h3 className="donate-header">Do you believe in our cause? Help our campaign by your donation.</h3>
+        <h3 className="donate-header">Do you believe in our cause? Help our campaigns by your donation.</h3>
         <div className="donate-options">
           <div className="donate-card">
             <img src={bankImage} alt="Bank Transfer" />
             <p><b>Bank Transfer</b></p>
-            <p>Details coming soon</p>
-            <p>Soon</p>
-            <p>Bank Name</p>
+            <p>Acc no : 00401040251617</p>
+            <p>NIMB Bank</p>
+            <p>Pulchok Branch</p>
           </div>
           {/* <div className="donate-card">
             <a href="https://www.gofundme.com/f/change-because-we-can" target="_blank" rel="noopener noreferrer">
