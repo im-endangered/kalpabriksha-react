@@ -13,22 +13,47 @@ function Navbar() {
   return (
     <header className="navbar-container">
       {/* Top Bar */}
-      <div className="navbar-top">
-        <div className="container d-flex justify-content-between align-items-center flex-wrap">
-          <div className="d-flex align-items-center contact-info">
-            <i className="far fa-envelope me-1"></i>
-            <a href="mailto:contact@kalpabriksha.org" className="me-3">contact@kalpabriksha.org</a>
-            <i className="fas fa-phone-volume me-1"></i>
-            <a href="tel:+9779763684743">+977 9763684743</a>
-          </div>
-          <div className="d-flex align-items-center social-links">
-            <small className="me-2">Follow Us:</small>
-            <a href="https://www.facebook.com/kalpabriksha.np" target="_blank" rel="noreferrer">
-              <i className="fab fa-facebook me-2"></i>
-            </a>
-            <a href="https://www.instagram.com/kalpabriksha.np/" target="_blank" rel="noreferrer">
-              <i className="fab fa-instagram"></i>
-            </a>
+      <div className="header-top">
+        <div className="container">
+          <div className="row col-det">
+            <div className="col-lg-6 d-none d-lg-block">
+              <ul className="ulleft">
+                <li>
+                  <i className="far fa-envelope"></i>
+                  <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a>
+                  <span>|</span>
+                </li>
+                <li>
+                  <i className="fas fa-phone-volume"></i>
+                  <a href="tel:+9779763684743">+977 9763684743</a>
+                </li>
+              </ul>
+            </div>
+            <div className="col-lg-3 col-md-6 folouws">
+              <ul className="ulright">
+                <li>
+                  <small>Follow Us</small>:
+                </li>
+                <li>
+                  <a
+                    href="https://www.facebook.com/kalpabriksha.np"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-facebook"></i>
+                  </a>
+                </li>
+                <li>
+                  <a
+                    href="https://www.instagram.com/kalpabriksha.np/"
+                    target="_blank"
+                    rel="noreferrer"
+                  >
+                    <i className="fab fa-instagram"></i>
+                  </a>
+                </li>
+              </ul>
+            </div>
           </div>
         </div>
       </div>
