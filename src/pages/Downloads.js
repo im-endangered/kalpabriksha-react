@@ -5,6 +5,10 @@ import HeaderSeparator from '../components/HeaderSeparator';
 
 const downloadsData = [
   { title: 'विधान', category: 'Legal and Compliance', link: '/assets/bidhan.pdf' },
+  { title: 'साधारण सदस्यता सम्बन्धी नियमावली  २०८२ ', category: 'Legal and Compliance', link: '/assets/generalMember_regulation_2082.pdf' },
+  { title: 'स्वयंसेवक सम्बन्धी नियमावली २०८२', category: 'Legal and Compliance', link: '/assets/volunteer_regulation_2082.pdf' },
+  { title: 'इन्टर्न (Intern) सम्बन्धी नियमावली २०८२', category: 'Legal and Compliance', link: '/assets/intern_regulation_2082.pdf' },
+  { title: 'First AGM Minutes', category: 'Minutes', link: '/assets/first_agm_minutes.pdf' },
   { title: 'Annual Summary 2022', category: 'Yearly Report', link: '/assets/annual_summary_2022.pdf' },
   { title: 'Annual Summary 2080', category: 'Yearly Report', link: '/assets/annual_summary_2080.pdf' },
   { title: 'We Listen and We Dont Judge', category: 'Event Report', link: '/assets/report_we_listen_and_we_dont_judge.pdf' },
