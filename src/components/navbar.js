@@ -1,106 +1,79 @@
-import React, { useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import logo from "../assets/images/circular.png";
+import "../assets/styles/navbar.css";
 
-function Navbar() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
+function CustomNavbar() {
   return (
-    <header className="navbar-container">
-      {/* Top Bar */}
-      <div className="header-top">
-        <div className="container">
-          <div className="row col-det">
-            <div className="col-lg-6 d-none d-lg-block">
-              <ul className="ulleft">
-                <li>
-                  <i className="far fa-envelope"></i>
-                  <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a>
-                  <span>|</span>
-                </li>
-                <li>
-                  <i className="fas fa-phone-volume"></i>
-                  <a href="tel:+9779763684743">+977 9763684743</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 folouws">
-              <ul className="ulright">
-                <li>
-                  <small>Follow Us</small>:
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/kalpabriksha.np"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/kalpabriksha.np/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <>
+    <div className="top-header">
+  <div className="container">
+    <div className="row align-items-center justify-content-between">
+      <div className="col-lg-6 d-none d-lg-block">
+        <ul className="contact-info list-inline mb-0">
+          <li className="list-inline-item me-4">
+            <i className="far fa-envelope me-1"></i>
+            <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a>
+            <span className="mx-2">|</span>
+          </li>
+          <li className="list-inline-item">
+            <i className="fas fa-phone-volume me-1"></i>
+            <a href="tel:+9779763684743">+977 9763684743</a>
+          </li>
+        </ul>
       </div>
-
-      {/* Bottom Navigation */}
-      <div className="navbar-main">
-        <div className="container d-flex justify-content-between align-items-center flex-wrap">
-          {/* Logo */}
-          <div className="d-flex align-items-center">
-            <Link to="/" className="navbar-logo me-3">
-              <img src={logo} alt="Kalpabriksha Logo" height="55" />
-            </Link>
-            <button className="d-lg-none nav-toggle" onClick={toggleMenu}>
-              &#9776;
-            </button>
-          </div>
-
-          {/* Nav Links */}
-          <nav className={`nav-links ${isMenuOpen ? "show" : ""}`}>
-            <ul className="d-flex flex-wrap align-items-center justify-content-center">
-              {[
-                { path: "/", name: "Home" },
-                { path: "/about", name: "About" },
-                { path: "/cbwc", name: "Change: Because We Can" },
-                { path: "/gallery", name: "Gallery" },
-                { path: "/contact", name: "Contact Us" },
-                { path: "/donate", name: "Donate Us" },
-                { path: "/faq", name: "FAQs" },
-                { path: "/download", name: "Downloads" },
-              ].map((link) => (
-                <li key={link.path} className="nav-item">
-                  <NavLink
-                    to={link.path}
-                    className={({ isActive }) =>
-                      `nav-link ${isActive ? "highlighted" : ""}`
-                    }
-                  >
-                    {link.name}
-                  </NavLink>
-                </li>
-              ))}
-            </ul>
-          </nav>
-        </div>
+      <div className="col-lg-3 col-md-6 text-lg-end">
+        <ul className="social-links list-inline mb-0">
+          <li className="list-inline-item">
+            <small className="text-muted">Follow Us:</small>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.facebook.com/kalpabriksha.np" target="_blank" rel="noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.instagram.com/kalpabriksha.np/" target="_blank" rel="noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </div>
+</div>
+
+
+      <Navbar expand="lg" bg="white" variant="light" className="py-3">
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" width="80" />
+        </Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav className="mx-auto">
+            <NavDropdown title="About" id="about-dropdown">
+              <NavDropdown.Item as={NavLink} to="/about">About Us</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/bod">Our Team</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Our Programs"  id="programs-dropdown">
+              <NavDropdown.Item as={NavLink} to="/cbwc">Change Because We Can</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/">Other Programs</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavLink to="/gallery" className="custom-nav-link">Gallery</NavLink>
+            <NavLink to="/contact" className="custom-nav-link">Contact Us</NavLink>
+            <NavLink to="/resources" className="custom-nav-link">Resources</NavLink>
+            <NavLink to="/faqs" className="custom-nav-link">FAQs</NavLink>
+          </Nav>
+
+          <Button as={NavLink} to="/donate" className="donate-button">DONATE</Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

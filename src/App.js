@@ -17,13 +17,9 @@ import ContactUs from './pages/contact';
 import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
-import LocomotiveScroll from 'locomotive-scroll';
 import Downloads from './pages/Downloads.js';
 
 function App() {
-    // eslint-disable-next-line
-    const locomotiveScroll = new LocomotiveScroll();
-    
     return (
     <Router>
       <Routes>
@@ -33,8 +29,8 @@ function App() {
         <Route path="/cbwc" element={<Change />} />
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/donate" element={<DonateUs />} />
-        <Route path="/faq" element={<FAQ />} />
-        <Route path="/download" element={<Downloads />} />
+        <Route path="/faqs" element={<FAQ />} />
+        <Route path="/resources" element={<Downloads />} />
         <Route path="/gallery" element={<Gallery />} />
       </Routes>
     </Router>

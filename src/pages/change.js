@@ -9,11 +9,8 @@ import VolunteerCarousel from "../components/VolunteerCarousel.js";
 import ProgramDirector from "../components/ProgramDirector";
 import Achievements from "../components/Achievements";
 import "../assets/styles/change.css";
-import LocomotiveScroll from "locomotive-scroll";
 
 const Change = () => {
-  // eslint-disable-next-line
-  const locomotiveScroll = new LocomotiveScroll();
   return (
     <div>
       <Navbar />

@@ -79,6 +79,7 @@
   position: relative;
   color: white;
   padding: 0;
+  margin: 0;
   background: url("../images/slider/jyotidaya.jpg") no-repeat center center;
   background-size: cover;
 }

@@ -1,136 +1,106 @@
-/* Mobile Menu Styles */
-.nav-col {
-  display: none; /* Hidden by default */
+/* navbar.css */
+.top-header {
+  background-color: #f8f9fa;
+  padding: 8px 0;
+  font-size: 14px;
+  border-bottom: 1px solid #e0e0e0;
 }
 
-#menu-jk {
-  background: #fff;
-  position: relative;
+.contact-info a,
+.social-links a {
+  color: #333;
+  text-decoration: none;
+  transition: color 0.3s ease;
 }
 
-/* Desktop Styles */
-@media (min-width: 992px) {
-  .nav-col {
-    display: block; /* Show desktop menu */
-  }
-
-  .small-menu {
-    display: none; /* Hide mobile menu toggle button */
-  }
+.contact-info a:hover,
+.social-links a:hover {
+  color: #0d6efd;
 }
 
-/* Mobile Styles */
-@media (max-width: 991px) {
-  .nav-col {
-    display: none; /* Hide desktop menu in mobile */
-  }
-
-  .small-menu {
-    display: block; /* Show mobile menu toggle button */
-    color: #686968;
-    font-size: 1.8rem;
-    position: absolute;
-    right: 15px;
-    top: 15px;
-  }
-
-  .navbad {
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 10px;
-  }
-
-  .navbad li {
-    width: 100%;
-    padding: 10px 15px;
-  }
-
-  .navbad li a {
-    width: 100%;
-    display: block;
-    color: #686968;
-    text-align: left;
-  }
+.contact-info i,
+.social-links i {
+  color: #0d6efd;
+  margin-right: 4px;
 }
 
-/* Highlight Current Page */
-.navbad .highlighted {
-  background-color: #19467d;
+.social-links a {
+  display: inline-block;
+  width: 28px;
+  height: 28px;
+  line-height: 28px;
+  text-align: center;
+  border-radius: 50%;
+  background-color: #e9ecef;
+  color: #0d6efd;
+  transition: all 0.3s ease;
+}
+
+.social-links a:hover {
+  background-color: #0d6efd;
   color: #fff;
-  border-radius: 50px;
 }
 
-/* Responsive Navbar for Mobile */
+/* Force dropdown titles to be black */
+.navbar .dropdown-toggle {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+/* Optional: make hover color consistent */
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus {
+  color: #0d6efd !important; /* Bootstrap's primary blue */
+}
+
+
 @media (max-width: 991px) {
-    header .header-bottom {
-      padding: 10px 15px;
-      position: relative;
-    }
-  
-    header .nav-col {
-      display: none; /* Hide the default navbar */
-    }
-  
-    .mobile-menu-icon {
-      font-size: 24px;
-      cursor: pointer;
-      color: #444;
-      position: absolute;
-      top: 15px;
-      right: 20px;
-    }
-  
-    .mobile-menu {
-      display: none;
-      position: absolute;
-      top: 100%;
-      left: 0;
-      width: 100%;
-      background-color: #fff;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2);
-      z-index: 100;
-      padding: 15px 0;
-      text-align: center;
-    }
-  
-    .mobile-menu ul {
-      margin: 0;
-      padding: 0;
-      list-style: none;
-    }
-  
-    .mobile-menu li {
-      padding: 10px 0;
-    }
-  
-    .mobile-menu a {
-      color: #444;
-      text-decoration: none;
-      font-weight: 600;
-      font-size: 1rem;
-      display: block;
-    }
-  
-    .mobile-menu a:hover {
-      background-color: #f0f0f0;
-      color: #19467d;
-    }
-  
-    .mobile-menu.active {
-      display: block;
-    }
+  .top-header {
+    text-align: center;
   }
-  /* Style for highlighted menu item */
-.mobile-menu .highlighted {
-    background-color: #19467d; /* Blue background */
-    color: white; /* White text */
-    font-weight: bold; /* Bold text for emphasis */
-    border-radius: 5px; /* Rounded corners for a smoother look */
-    padding: 10px 15px; /* Add some padding for a cleaner appearance */
-    margin: 5px 0; /* Space between highlighted and other items */
+
+  .top-header .contact-info,
+  .top-header .social-links {
+    justify-content: center;
+    padding-top: 8px;
   }
-  
-  .mobile-menu .highlighted:hover {
-    background-color: #153a63; /* Slightly darker shade on hover */
-  }
-  
+}
+
+
+.custom-nav-link {
+  color: #333;
+  padding: 8px 12px;
+  text-decoration: none;
+  font-weight: 500;
+  border-bottom: 2px solid transparent;
+  transition: all 0.3s ease;
+}
+
+.custom-nav-link:hover,
+.custom-nav-link.active {
+  border-bottom: 2px solid #0056b3;
+  text-decoration: none;
+}
+
+.donate-button {
+  background-color: #133c78;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  padding: 8px 24px;
+  font-weight: 600;
+  margin-left: 1rem;
+  box-shadow: 0 4px 8px rgba(0,0,0,0.1);
+  text-transform: uppercase;
+}
+
+.navbar .dropdown-toggle {
+  color: #000 !important;
+  font-weight: 500;
+}
+
+/* Optional: make hover color consistent */
+.navbar .dropdown-toggle:hover,
+.navbar .dropdown-toggle:focus {
+  color: #0d6efd !important; /* Bootstrap's primary blue */
+}
