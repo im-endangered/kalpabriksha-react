@@ -369,13 +369,6 @@ header {
   .navbar {
     padding: 0px; } }
 
-.navbar-toggler {
-  position: absolute;
-  right: 0px;
-  top: -40px; }
-  @media screen and (max-width: 767px) {
-    .navbar-toggler {
-      top: -50px; } }
 
 .scroll-to-fixed-fixed {
   background-color: #FFF;

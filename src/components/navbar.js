@@ -1,129 +1,79 @@
-import React, { useState } from "react";
-import { NavLink, Link, useLocation } from "react-router-dom";
+import { NavLink } from "react-router-dom";
+import { Navbar, Nav, Container, Button, NavDropdown } from "react-bootstrap";
 import logo from "../assets/images/circular.png";
+import "../assets/styles/navbar.css";
 
-function Navbar() {
-  const [isMenuOpen, setMenuOpen] = useState(false);
-  const location = useLocation();
-
-  const toggleMenu = () => {
-    setMenuOpen(!isMenuOpen);
-  };
-
+function CustomNavbar() {
   return (
-    <header className="container-fluid">
-      <div className="header-top">
-        <div className="container">
-          <div className="row col-det">
-            <div className="col-lg-6 d-none d-lg-block">
-              <ul className="ulleft">
-                <li>
-                  <i className="far fa-envelope"></i>
-                  <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a>
-                  <span>|</span>
-                </li>
-                <li>
-                  <i className="fas fa-phone-volume"></i>
-                  <a href="tel:+9779843389412">+977 9763684743</a>
-                </li>
-              </ul>
-            </div>
-            <div className="col-lg-3 col-md-6 folouws">
-              <ul className="ulright">
-                <li>
-                  <small>Follow Us</small>:
-                </li>
-                <li>
-                  <a
-                    href="https://www.facebook.com/kalpabriksha.np"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-facebook"></i>
-                  </a>
-                </li>
-                <li>
-                  <a
-                    href="https://www.instagram.com/kalpabriksha.np/"
-                    target="_blank"
-                    rel="noreferrer"
-                  >
-                    <i className="fab fa-instagram"></i>
-                  </a>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+    <>
+    <div className="top-header">
+  <div className="container">
+    <div className="row align-items-center justify-content-between">
+      <div className="col-lg-6 d-none d-lg-block">
+        <ul className="contact-info list-inline mb-0">
+          <li className="list-inline-item me-4">
+            <i className="far fa-envelope me-1"></i>
+            <a href="mailto:contact@kalpabriksha.org">contact@kalpabriksha.org</a>
+            <span className="mx-2">|</span>
+          </li>
+          <li className="list-inline-item">
+            <i className="fas fa-phone-volume me-1"></i>
+            <a href="tel:+9779763684743">+977 9763684743</a>
+          </li>
+        </ul>
       </div>
-      <div id="menu-jk" className="header-bottom">
-        <div className="container">
-          <div className="row nav-row">
-            <div className="col-lg-2 col-md-12 logo">
-              <Link to="/">
-                <img src={logo} alt="logo" width="75" height="75" />
-              </Link>
-              <button
-                className={`small-menu d-lg-none ${
-                  isMenuOpen || location.pathname === "/" ? "bg-blue" : ""
-                }`}
-                onClick={toggleMenu}
-              >
-                &#9776;
-              </button>
-            </div>
-            <div
-              id="menu"
-              className={`col-lg-12 col-md-9 nav-col ${isMenuOpen ? "d-block" : "d-none d-lg-block"}`}
-            >
-              <ul className="navbad">
-                <li>
-                  <NavLink to="/" className={({isActive})=>`nav-link ${isActive ? "highlighted" : ""}`} exact>
-                    Home
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/about" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    About
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/cbwc" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    Change: Because We Can
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/gallery" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    Gallery
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/contact" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    Contact Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/donate" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    Donate Us
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/faq" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    FAQs
-                  </NavLink>
-                </li>
-                <li>
-                  <NavLink to="/download" className={({isActive})=>`nav-link ${isActive ? "highlighted" : "nav-link"}`}>
-                    Downloads
-                  </NavLink>
-                </li>
-              </ul>
-            </div>
-          </div>
-        </div>
+      <div className="col-lg-3 col-md-6 text-lg-end">
+        <ul className="social-links list-inline mb-0">
+          <li className="list-inline-item">
+            <small className="text-muted">Follow Us:</small>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.facebook.com/kalpabriksha.np" target="_blank" rel="noreferrer">
+              <i className="fab fa-facebook-f"></i>
+            </a>
+          </li>
+          <li className="list-inline-item">
+            <a href="https://www.instagram.com/kalpabriksha.np/" target="_blank" rel="noreferrer">
+              <i className="fab fa-instagram"></i>
+            </a>
+          </li>
+        </ul>
       </div>
-    </header>
+    </div>
+  </div>
+</div>
+
+
+      <Navbar expand="lg" bg="white" variant="light" className="py-3">
+      <Container>
+        <Navbar.Brand href="/">
+          <img src={logo} alt="Logo" width="80" />
+        </Navbar.Brand>
+        <Navbar.Toggle />
+        <Navbar.Collapse>
+          <Nav className="mx-auto">
+            <NavDropdown title="About" id="about-dropdown">
+              <NavDropdown.Item as={NavLink} to="/about">About Us</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/bod">Our Team</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavDropdown title="Our Programs"  id="programs-dropdown">
+              <NavDropdown.Item as={NavLink} to="/cbwc">Change Because We Can</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/">Other Programs</NavDropdown.Item>
+            </NavDropdown>
+
+            <NavLink to="/gallery" className="custom-nav-link">Gallery</NavLink>
+            <NavLink to="/contact" className="custom-nav-link">Contact Us</NavLink>
+            <NavLink to="/resources" className="custom-nav-link">Resources</NavLink>
+            <NavLink to="/faqs" className="custom-nav-link">FAQs</NavLink>
+          </Nav>
+
+          <Button as={NavLink} to="/donate" className="donate-button">DONATE</Button>
+        </Navbar.Collapse>
+      </Container>
+    </Navbar>
+    </>
   );
 }
 
-export default Navbar;
+export default CustomNavbar;

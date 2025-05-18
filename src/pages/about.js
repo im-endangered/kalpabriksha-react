@@ -5,7 +5,6 @@ import Footer from "../components/footer";
 import "../assets/styles/about.css";
 import { useNavigate } from 'react-router-dom'; // Import useNavigate hook
 import FlippingCard from '../components/FlippingCard';
-import LocomotiveScroll from 'locomotive-scroll';
 
 
 import nitamImage from '../assets/images/team/nitam.png';
@@ -13,9 +12,6 @@ import pankajImage from '../assets/images/team/pankaj.png';
 import rejinImage from '../assets/images/team/REjin.jpg';
 
 const About = () => {
-  // eslint-disable-next-line
-  const locomotiveScroll = new LocomotiveScroll();
-
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
 
   const handleFlip = (index) => {
