@@ -247,9 +247,6 @@ header .nav-col .navbad li a.highlighted{
   transition: all 0.2s ease;
 }
 
-.nav-link:hover {
-  background-color: #e0e0e0;
-}
 
 .nav-link.highlighted {
   background-color: #13315c;
