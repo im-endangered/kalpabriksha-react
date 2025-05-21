@@ -93,7 +93,9 @@ const Downloads = () => {
                     <td className="text-start">{doc.title}</td>
                     <td>{doc.category}</td>
                     <td>
-                      <div className="d-flex justify-content-center gap-2">
+                      <div 
+                      style={{gap: '10px'}}
+                      className="d-flex justify-content-center gap-2">
                         <a
                           href={doc.link}
                           target="_blank"

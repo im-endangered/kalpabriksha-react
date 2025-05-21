@@ -90,7 +90,7 @@
 
 /* Add Spacing Around Button */
 .btn-primary {
-  margin-top: 20px; /* Space above button */
+  margin-top: 0px; /* Space above button */
 }
 
 /* Center Align Button */

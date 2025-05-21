@@ -44,27 +44,31 @@ function CustomNavbar() {
 </div>
 
 
-      <Navbar expand="lg" bg="white" variant="light" className="py-3">
+      <Navbar expand="lg" bg="white" variant="light" className="py-3 ">
       <Container>
         <Navbar.Brand href="/">
           <img src={logo} alt="Logo" width="80" />
         </Navbar.Brand>
         <Navbar.Toggle />
         <Navbar.Collapse>
-          <Nav className="mx-auto">
-            <NavDropdown title="About" id="about-dropdown">
+          <Nav className="mx-auto navbar">
+            <NavDropdown title="About" className="custom-nav-link" id="about-dropdown">
               <NavDropdown.Item as={NavLink} to="/about">About Us</NavDropdown.Item>
               <NavDropdown.Item as={NavLink} to="/bod">Our Team</NavDropdown.Item>
             </NavDropdown>
 
-            <NavDropdown title="Our Programs"  id="programs-dropdown">
+            <NavDropdown title="Our Programs" className="custom-nav-link" id="programs-dropdown">
               <NavDropdown.Item as={NavLink} to="/cbwc">Change Because We Can</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/">Other Programs</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/cbwc">Other Programs</NavDropdown.Item>
             </NavDropdown>
 
             <NavLink to="/gallery" className="custom-nav-link">Gallery</NavLink>
             <NavLink to="/contact" className="custom-nav-link">Contact Us</NavLink>
-            <NavLink to="/resources" className="custom-nav-link">Resources</NavLink>
+
+            <NavDropdown title="Resources" className="custom-nav-link" id="resources-dropdown">
+              <NavDropdown.Item as={NavLink} to="/resources">Downloads</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/resources">Notice</NavDropdown.Item>
+            </NavDropdown>
             <NavLink to="/faqs" className="custom-nav-link">FAQs</NavLink>
           </Nav>
 
