@@ -47,7 +47,7 @@ function BecomeMember() {
             <li>b. Copy of Citizenship Certificate</li>
             <li>c. One passport-size photo</li>
             <li>d. For online submissions: Clear photo with both ears visible</li>
-            <li>e. Copy of Police Clearance Certificate <a href="https://opcr.nepalpolice.gov.np/" target="_blank" ><u>Apply online</u></a> </li>
+            <li>e. Copy of Police Clearance Certificate <a href="https://opcr.nepalpolice.gov.np/" target="_blank" rel="noreferrer" ><u>Apply online</u></a> </li>
             <li>f. Details of prior social contribution (if available)</li>
           </ul>
 
@@ -88,7 +88,7 @@ function BecomeMember() {
 
 
         <div className="text-center mt-4">
-          <a href="https://forms.gle/CdzDs8Ufdn9o1fsT6" target="_blank" className="btn btn-primary btn-lg">
+          <a href="https://forms.gle/CdzDs8Ufdn9o1fsT6" target="_blank" rel="noreferrer" className="btn btn-primary btn-lg">
             Apply for Membership
           </a>
         </div>
