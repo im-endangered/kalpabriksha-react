@@ -19,6 +19,7 @@ import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
 import Downloads from './pages/Downloads.js';
 import BecomeMember from './pages/becomeMember.js';
+import Notices from './pages/notices.js';
 
 function App() {
     return (
@@ -31,9 +32,10 @@ function App() {
         <Route path="/contact" element={<ContactUs />} />
         <Route path="/donate" element={<DonateUs />} />
         <Route path="/faqs" element={<FAQ />} />
-        <Route path="/resources" element={<Downloads />} />
+        <Route path="/downloads" element={<Downloads />} />
         <Route path="/gallery" element={<Gallery />} />
         <Route path="/membership" element={<BecomeMember />} />
+        <Route path="/notices" element={<Notices />} />
       </Routes>
     </Router>
   );

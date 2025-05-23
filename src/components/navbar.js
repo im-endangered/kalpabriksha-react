@@ -54,7 +54,8 @@ function CustomNavbar() {
           <Nav className="mx-auto navbar">
             <NavDropdown title="About" className="custom-nav-link" id="about-dropdown">
               <NavDropdown.Item as={NavLink} to="/about">About Us</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/bod">Our Team</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/bod">Board of Directors</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/membership">Become a member</NavDropdown.Item>
             </NavDropdown>
 
             <NavDropdown title="Our Programs" className="custom-nav-link" id="programs-dropdown">
@@ -66,8 +67,8 @@ function CustomNavbar() {
             <NavLink to="/contact" className="custom-nav-link">Contact Us</NavLink>
 
             <NavDropdown title="Resources" className="custom-nav-link" id="resources-dropdown">
-              <NavDropdown.Item as={NavLink} to="/resources">Downloads</NavDropdown.Item>
-              <NavDropdown.Item as={NavLink} to="/resources">Notice</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/downloads">Downloads</NavDropdown.Item>
+              <NavDropdown.Item as={NavLink} to="/notices">Notice</NavDropdown.Item>
             </NavDropdown>
             <NavLink to="/faqs" className="custom-nav-link">FAQs</NavLink>
           </Nav>
