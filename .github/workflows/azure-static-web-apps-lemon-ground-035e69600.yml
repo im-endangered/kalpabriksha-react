@@ -30,23 +30,15 @@ jobs:
       - name: Install OIDC Client from Core Package
         run: npm install @actions/core@1.6.0 @actions/http-client
 
-      - name: Get ID Token
-        uses: actions/github-script@v6
-        id: idtoken
-        with:
-          script: |
-            return await core.getIDToken()
-          result-encoding: string
-
       - name: Build And Deploy
         id: builddeploy
         uses: Azure/static-web-apps-deploy@v1
         with:
           action: "upload"
-          app_location: "/"               # Your app root
-          api_location: ""               # Your API folder if any
-          output_location: "build"       # Build output folder
-          github_id_token: ${{ steps.idtoken.outputs.result }}
+          app_location: "/"               
+          api_location: ""               
+          output_location: "build"       
+          azure_static_web_apps_api_token: ${{ secrets.Azure_Static_Web_Apps_API_Token }}
 
   close_pull_request_job:
     if: github.event_name == 'pull_request' && github.event.action == 'closed'
