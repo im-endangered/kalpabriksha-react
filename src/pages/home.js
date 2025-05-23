@@ -30,10 +30,10 @@ function Home() {
             <div className="col-md-6 support-options">
               <h6>Ways to support us</h6>
               <div className="support-grid">
-                <a href='https://docs.google.com/forms/d/e/1FAIpQLSezQb4yRTh7Sr0f7RmvXgQR5N75rCm7qQUGjZVi5Kixn-WI5g/viewform'>
+                <a href='/membership'>
                 <div className="support-card">
                   <i className="fas fa-user"></i>
-                  <p>Become a Volunteer</p>
+                  <p>Become a Member</p>
                 </div>
                 </a>
                 <div className="support-card">

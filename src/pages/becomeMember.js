@@ -88,7 +88,7 @@ function BecomeMember() {
 
 
         <div className="text-center mt-4">
-          <a href="#" className="btn btn-primary btn-lg">
+          <a href="https://forms.gle/CdzDs8Ufdn9o1fsT6" target="_blank" className="btn btn-primary btn-lg">
             Apply for Membership
           </a>
         </div>
