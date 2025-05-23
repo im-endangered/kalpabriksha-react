@@ -18,6 +18,7 @@ import DonateUs from './pages/donate';
 import FAQ from './pages/faq';
 import Gallery from './pages/gallery';
 import Downloads from './pages/Downloads.js';
+import BecomeMember from './pages/becomeMember.js';
 
 function App() {
     return (
@@ -32,6 +33,7 @@ function App() {
         <Route path="/faqs" element={<FAQ />} />
         <Route path="/resources" element={<Downloads />} />
         <Route path="/gallery" element={<Gallery />} />
+        <Route path="/membership" element={<BecomeMember />} />
       </Routes>
     </Router>
   );
