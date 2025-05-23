@@ -16,7 +16,7 @@ jobs:
     name: Build and Deploy Job
     steps:
       - name: Set User Configurations
-        run: chmod -R 777 
+        run: chmod -R 777 ${{ github.workspace }}
       - uses: actions/checkout@v3
         with:
           submodules: true
