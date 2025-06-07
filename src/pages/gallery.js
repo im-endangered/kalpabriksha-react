@@ -1,60 +1,41 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
+import galleryData from "../data/gallery.json";
 import "../assets/styles/gallery.css";
 
-import image1 from '../assets/images/events/cbwc-1.jpg';
-import image2 from '../assets/images/events/cbwc-2.jpg';
-import image3 from '../assets/images/events/cbwc-3.jpg';
-import image4 from '../assets/images/events/cbwc-4.jpg';
-import image5 from '../assets/images/events/cbwc-5.jpg';
-import image6 from '../assets/images/events/cbwc-6.jpg';
-import image7 from '../assets/images/events/cbwc-7.jpg';
-import image8 from '../assets/images/events/cbwc-8.jpg';
-import image9 from '../assets/images/events/cbwc-feedback.png';
-import image10 from '../assets/images/events/cbwc-yuwantar.jpg';
-import image11 from '../assets/images/events/hgatm-1.png';
-import image12 from '../assets/images/events/hgatm-2.png';
-
-
-const galleryImages = [
-    { src: image1, alt: 'Image 1' },
-    { src: image2, alt: 'Image 2' },
-    { src: image3, alt: 'Image 3' },
-    { src: image4, alt: 'Image 4' },
-    { src: image5, alt: 'Image 5' },
-    { src: image6, alt: 'Image 6' },
-    { src: image7, alt: 'Image 7' },
-    { src: image8, alt: 'Image 8' },
-    { src: image9, alt: 'Image 9' },
-    { src: image10, alt: 'Image 10' },
-    { src: image11, alt: 'Image 11' },
-    { src: image12, alt: 'Image 12' },
-  ];
-
 const Gallery = () => {
+  const [selectedTag, setSelectedTag] = useState("All");
+  const [filteredImages, setFilteredImages] = useState(galleryData);
+
+  const uniqueTags = ["All", ...new Set(galleryData.flatMap(img => img.tags))];
+
+  useEffect(() => {
+    if (selectedTag === "All") {
+      setFilteredImages(galleryData);
+    } else {
+      setFilteredImages(
+        galleryData.filter(img => img.tags.includes(selectedTag))
+      );
+    }
+  }, [selectedTag]);
+
   const [lightboxOpen, setLightboxOpen] = useState(false);
-  const [currentImage, setCurrentImage] = useState(0);
+  const [currentImageIndex, setCurrentImageIndex] = useState(0);
 
   const openLightbox = (index) => {
-    setCurrentImage(index);
+    setCurrentImageIndex(index);
     setLightboxOpen(true);
   };
 
-  const closeLightbox = () => {
-    setLightboxOpen(false);
-  };
-
-  const nextImage = () => {
-    setCurrentImage((prev) => (prev + 1) % galleryImages.length);
-  };
-
-  const prevImage = () => {
-    setCurrentImage((prev) =>
-      prev === 0 ? galleryImages.length - 1 : prev - 1
+  const closeLightbox = () => setLightboxOpen(false);
+  const nextImage = () =>
+    setCurrentImageIndex((prev) => (prev + 1) % filteredImages.length);
+  const prevImage = () =>
+    setCurrentImageIndex((prev) =>
+      prev === 0 ? filteredImages.length - 1 : prev - 1
     );
-  };
 
   return (
     <div>
@@ -63,20 +44,39 @@ const Gallery = () => {
         title="Our Gallery"
         breadcrumb={[{ name: "Home", link: "/" }, { name: "Gallery" }]}
       />
+
+      {/* Tag Filters */}
+      <div className="gallery-tags">
+        {uniqueTags.map((tag, idx) => (
+          <button
+            key={idx}
+            className={`tag-button ${selectedTag === tag ? "active" : ""}`}
+            onClick={() => setSelectedTag(tag)}
+          >
+            {tag}
+          </button>
+        ))}
+      </div>
+
+      {/* Image Grid */}
       <div className="gallery-container">
         <div className="gallery-grid">
-          {galleryImages.map((image, index) => (
+          {filteredImages.map((image, index) => (
             <div
               key={index}
               className="gallery-item"
               onClick={() => openLightbox(index)}
             >
-              <img src={image.src} alt={image.alt} />
+              <img
+                src={require(`../assets/images/events/${image.filename}`)}
+                alt={image.alt}
+              />
             </div>
           ))}
         </div>
       </div>
 
+      {/* Lightbox */}
       {lightboxOpen && (
         <div className="lightbox">
           <button className="close-btn" onClick={closeLightbox}>
@@ -86,8 +86,8 @@ const Gallery = () => {
             &larr;
           </button>
           <img
-            src={galleryImages[currentImage].src}
-            alt={galleryImages[currentImage].alt}
+            src={require(`../assets/images/events/${filteredImages[currentImageIndex].filename}`)}
+            alt={filteredImages[currentImageIndex].alt}
             className="lightbox-image"
           />
           <button className="next-btn" onClick={nextImage}>

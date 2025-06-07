@@ -83,3 +83,25 @@
     column-count: 1;
   }
 }
+.gallery-tags {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 1rem 0;
+  gap: 10px;
+}
+
+.tag-button {
+  padding: 6px 14px;
+  border: 1px solid #999;
+  border-radius: 20px;
+  cursor: pointer;
+  background-color: white;
+  transition: all 0.3s;
+}
+
+.tag-button:hover,
+.tag-button.active {
+  background-color: #222;
+  color: white;
+}
