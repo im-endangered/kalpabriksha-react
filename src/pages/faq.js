@@ -8,29 +8,41 @@ const FAQ = () => {
   // Array of FAQs
   const faqs = [
     {
-      question: "What is Kalpabriksha?",
+      question: "I'm gonna ask you this one time, where is Kalpabriksha?",
       answer:
-        "Kalpabriksha is a development platform that supports youth in Nepal through initiatives that promote emotional, intellectual, and social growth.",
+        "Our head office is located at Godawari -13, Lalitpur",
     },
     {
-      question: "How can I get involved with Kalpabriksha?",
+      question: "I'll do you one better, who's Kalpabriksha?",
       answer:
-        "You can volunteer with us, donate to our campaigns, or participate in our mentorship programs. Reach out to us for more details!",
+        "Kalpabriksha is a youth-led development platform rooted in Nepal, built by and for young changemakers. We are a community of students, creatives, and leaders working together to promote emotional, social, and intellectual growth — in ourselves and in our communities. We stand for equity, inclusion, and innovation. Whether it's through traditional values or experimental ideas, we believe in giving young people the space, support, and inspiration to create impact — not someday, but today.",
     },
     {
-      question: "Where is Kalpabriksha located?",
-      answer: "We are located in Chapagaun, Lalitpur, Nepal. You can find us on Google Maps for precise directions.",
+      question: "Why is Kalpabriksha?",
+      answer:
+        "Because, why not? \n But seriously, because we saw the gap. Because too many youths in Nepal lack access to platforms that truly nurture their emotional, social, and intellectual potential. Kalpabriksha exists to fill that gap — to grow a culture of collaboration, creativity, and purpose. We're here because the next generation deserves more than just a future — they deserve the power to shape it.",
     },
     {
-      question: "How can I donate to Kalpabriksha?",
+      question: "How can I be a part of Kalpabriksha?",
       answer:
-        "We accept donations via bank transfers and GoFundMe. Visit our 'Donate Us' page for detailed instructions.",
+        "Please navigate to About > Become a Member for detailed guide and process.",
     },
     {
-      question: "What programs does Kalpabriksha offer?",
+      question: "What are the programs conducted by Kalpabriksha?",
       answer:
-        "Our programs include Change: Because We Can, mentorship initiatives, and skill development workshops for youth in Nepal.",
+        "Some of our major programs and event include Yuwantar (youth carnival), Gunjan (youth expression event) Change Because We Can (a workshop for school students), and History: Gaze at The Maze (Workshop on Nepalese History). Apart from this, we also conduct events and seminars that help in the development of youth",
     },
+    {
+      question: "What is “Change: Because We Can?”",
+      answer:
+        "“Change: Because We Can” is the flagship program of Kalpabriksha. In this program, we reach out to different schools of the country and teach students the concept of Mental Health, Youth and the Internet, the LGBTQA+ community, Harassment and Abuse faced by youth, Toxic Masculinity, and Gender Equality. We use interactive and outdoor learning methods to interact with students and make them understand the aforementioned sensitive issues in a fun yet impactful way.",
+    },
+    {
+      question: "Where can I ask questions where are not mentioned in the FAQs?",
+      answer:
+        "You can contact us anytime via social media, via email or via our contact number. ",
+    },
+  
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
