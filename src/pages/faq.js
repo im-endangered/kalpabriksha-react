@@ -9,8 +9,7 @@ const FAQ = () => {
   const faqs = [
     {
       question: "I'm gonna ask you this one time, where is Kalpabriksha?",
-      answer:
-        "Our head office is located at Godawari -13, Lalitpur",
+      answer: "Our head office is located at Godawari -13, Lalitpur",
     },
     {
       question: "I'll do you one better, who's Kalpabriksha?",
@@ -24,13 +23,21 @@ const FAQ = () => {
     },
     {
       question: "How can I be a part of Kalpabriksha?",
-      answer:
-        "Please navigate to About > Become a Member for detailed guide and process.",
+      answer: (
+        <>
+          Please navigate to{" "}
+          <a href="/membership" style={{ textDecoration: "underline" }}>
+            Become a Member Section
+          </a>{" "}
+
+          for a detailed guide and process.
+        </>
+      ),
     },
     {
       question: "What are the programs conducted by Kalpabriksha?",
       answer:
-        "Some of our major programs and event include Yuwantar (youth carnival), Gunjan (youth expression event) Change Because We Can (a workshop for school students), and History: Gaze at The Maze (Workshop on Nepalese History). Apart from this, we also conduct events and seminars that help in the development of youth",
+        "Some of our major programs and event include Yuwantar (youth carnival), Gunjan (youth expression event), Change Because We Can (a workshop for school students), and History: Gaze at The Maze (Workshop on Nepalese History). Apart from this, we also conduct events and seminars that help in the development of youth.",
     },
     {
       question: "What is “Change: Because We Can?”",
@@ -38,11 +45,10 @@ const FAQ = () => {
         "“Change: Because We Can” is the flagship program of Kalpabriksha. In this program, we reach out to different schools of the country and teach students the concept of Mental Health, Youth and the Internet, the LGBTQA+ community, Harassment and Abuse faced by youth, Toxic Masculinity, and Gender Equality. We use interactive and outdoor learning methods to interact with students and make them understand the aforementioned sensitive issues in a fun yet impactful way.",
     },
     {
-      question: "Where can I ask questions where are not mentioned in the FAQs?",
+      question: "Where can I ask questions that are not mentioned in the FAQs?",
       answer:
-        "You can contact us anytime via social media, via email or via our contact number. ",
+        "You can contact us anytime via social media, email, or our contact number.",
     },
-  
   ];
 
   const [activeIndex, setActiveIndex] = useState(null);
@@ -67,16 +73,17 @@ const FAQ = () => {
               className={`faq-item ${activeIndex === index ? "active" : ""}`}
               key={index}
             >
-              <div
-                className="faq-question"
-                onClick={() => toggleFAQ(index)}
-              >
+              <div className="faq-question" onClick={() => toggleFAQ(index)}>
                 <h3>{faq.question}</h3>
                 <span>{activeIndex === index ? "-" : "+"}</span>
               </div>
               {activeIndex === index && (
                 <div className="faq-answer">
-                  <p>{faq.answer}</p>
+                  {typeof faq.answer === "string" ? (
+                    <p>{faq.answer}</p>
+                  ) : (
+                    <div className="faq-answer-content">{faq.answer}</div>
+                  )}
                 </div>
               )}
             </div>
