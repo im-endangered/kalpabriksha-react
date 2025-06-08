@@ -35,8 +35,8 @@ const FAQ = () => {
       ),
     },
     {
-      question: "What are the programs conducted by Kalpabriksha?",
-      answer:
+      question: "What are the programs conducted  by Kalpabriksha?",
+      answer: 
         "Some of our major programs and event include Yuwantar (youth carnival), Gunjan (youth expression event), Change Because We Can (a workshop for school students), and History: Gaze at The Maze (Workshop on Nepalese History). Apart from this, we also conduct events and seminars that help in the development of youth.",
     },
     {
