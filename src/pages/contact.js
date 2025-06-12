@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
@@ -7,6 +8,18 @@ import "../assets/styles/contactus.css";
 const ContactUs = () => {
   return (
     <div>
+      <Helmet>
+        <title>Contact Us | Kalpabriksha Nepal</title>
+        <meta
+          name="description"
+          content="Reach out to Kalpabriksha Nepal. We're here to answer your questions, support your involvement, and provide more information about our mission."
+        />
+        <meta
+          name="keywords"
+          content="Contact, Kalpabriksha, Nepal, NGO, reach us, support, connect, mental health, youth, change"
+        />
+      </Helmet>
+
       <Navbar />
       <HeaderSeparator
         title="Contact Us"

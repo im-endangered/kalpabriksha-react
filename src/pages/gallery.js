@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
@@ -39,6 +40,18 @@ const Gallery = () => {
 
   return (
     <div>
+      <Helmet>
+        <title>Gallery | Kalpabriksha Nepal</title>
+        <meta
+          name="description"
+          content="Browse our gallery to explore Kalpabriksha Nepal's events, workshops, and impactful moments in the community."
+        />
+        <meta
+          name="keywords"
+          content="Gallery, Kalpabriksha, Nepal, events, photos, mental health, education, youth, NGO activities"
+        />
+      </Helmet>
+
       <Navbar />
       <HeaderSeparator
         title="Our Gallery"

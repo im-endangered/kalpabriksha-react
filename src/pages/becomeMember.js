@@ -1,4 +1,5 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navbar from "../components/navbar";
 import HeaderSeparator from "../components/HeaderSeparator";
 import Footer from "../components/footer";
@@ -7,6 +8,20 @@ import "../assets/styles/faq.css";
 function BecomeMember() {
   return (
     <div>
+      <Helmet>
+        <title>Become a Member | Kalpabriksha</title>
+        <meta
+          name="description"
+          content="Join Kalpabriksha as a general member and contribute to youth empowerment in Nepal. Learn about eligibility, membership fees, application process, and required documents."
+        />
+        <meta
+          name="keywords"
+          content="Kalpabriksha, membership, join Kalpabriksha, youth empowerment Nepal, nonprofit Nepal, become a member, general member regulation"
+        />
+        <meta name="author" content="Kalpabriksha Nepal" />
+        <link rel="canonical" href="https://kalpabriksha.org.np/membership" />
+      </Helmet>
+
       <Navbar />
       <HeaderSeparator
         title="Become a Member"
@@ -14,7 +29,6 @@ function BecomeMember() {
       />
 
       <div className="container my-5">
-
         <p>
           Kalpabriksha welcomes passionate individuals who believe in our mission to empower youth in Nepal. To become a general member, you must meet the following qualifications:
         </p>
@@ -47,7 +61,7 @@ function BecomeMember() {
             <li>b. Copy of Citizenship Certificate</li>
             <li>c. One passport-size photo</li>
             <li>d. For online submissions: Clear photo with both ears visible</li>
-            <li>e. Copy of Police Clearance Certificate <a href="https://opcr.nepalpolice.gov.np/" target="_blank" rel="noreferrer" ><u>Apply online</u></a> </li>
+            <li>e. Copy of Police Clearance Certificate <a href="https://opcr.nepalpolice.gov.np/" target="_blank" rel="noreferrer"><u>Apply online</u></a></li>
             <li>f. Details of prior social contribution (if available)</li>
           </ul>
 
@@ -75,17 +89,16 @@ function BecomeMember() {
             </li>
           </ul>
         </div>
-<div className="alert alert-warning mt-5" role="alert">
-  <strong>Disclaimer:</strong> Submission of the membership application does not guarantee acceptance.
-  All proceedings will be carried out as per the <em>General Membership Regulation 2082 (साधारण सदस्यता सम्बन्धी नियमावली २०८२)</em>.
-  <br />
-  <br />
-  <strong>⚠️ Please Note:</strong> The <em>General Membership Regulation 2082</em> is yet to be fully enforced. 
-  As a result, the current application process is simplified and more flexible — documents such as 
-  police clearance and formal verification are not mandatory at this stage. 
-  However, all applications must still align with the organization's statute.
-</div>
 
+        <div className="alert alert-warning mt-5" role="alert">
+          <strong>Disclaimer:</strong> Submission of the membership application does not guarantee acceptance.
+          All proceedings will be carried out as per the <em>General Membership Regulation 2082 (साधारण सदस्यता सम्बन्धी नियमावली २०८२)</em>.
+          <br /><br />
+          <strong>⚠️ Please Note:</strong> The <em>General Membership Regulation 2082</em> is yet to be fully enforced. 
+          As a result, the current application process is simplified and more flexible — documents such as 
+          police clearance and formal verification are not mandatory at this stage. 
+          However, all applications must still align with the organization's statute.
+        </div>
 
         <div className="text-center mt-4">
           <a href="https://forms.gle/CdzDs8Ufdn9o1fsT6" target="_blank" rel="noreferrer" className="btn btn-primary btn-lg">

@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import HeaderSeparator from '../components/HeaderSeparator';
@@ -30,6 +31,12 @@ const Notices = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Notices | Your Site Name</title>
+        <meta name="description" content="View and download the latest notices and announcements from our organization." />
+        <meta name="keywords" content="notices, announcements, updates, official, pdf" />
+      </Helmet>
+
       <Navbar />
       <HeaderSeparator title="Notices" breadcrumb={[{ name: 'Home', link: '/' }, { name: 'Notices' }]} />
       <div className="container py-4">

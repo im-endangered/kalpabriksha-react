@@ -59,4 +59,22 @@
   .faq-question span:hover {
     color: #0099cc;
   }
-  
+  .faq-question {
+  background: none;
+  border: none;
+  width: 100%;
+  text-align: left;
+  cursor: pointer;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.faq-question h2 {
+  font-size: 1.1rem;
+  margin: 0;
+}
+
+.faq-answer {
+  padding: 10px 0;
+}

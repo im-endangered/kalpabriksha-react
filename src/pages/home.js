@@ -1,4 +1,5 @@
 import React from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Slider from '../components/slider';
@@ -7,6 +8,17 @@ import '../assets/styles/home.css';
 function Home() {
   return (
     <div>
+      <Helmet>
+        <title>Home | Kalpabriksha Nepal</title>
+        <meta name="description" content="Kalpabriksha Nepal is a youth-led platform uplifting Nepalese youth through mentorship, empowerment, and community initiatives." />
+        <meta name="keywords" content="Kalpabriksha, Nepal, youth, NGO, mentorship, social impact, support, youth development" />
+        <meta property="og:title" content="Home | Kalpabriksha Nepal" />
+        <meta property="og:description" content="Empowering visionary youths of Nepal through community, mentorship, and support systems." />
+        <meta property="og:type" content="website" />
+        <meta property="og:url" content="https://kalpabriksha.org.np/" />
+        <meta property="og:image" content="/logo192.png" />
+      </Helmet>
+
       <Navbar />
       <Slider />
 
@@ -31,10 +43,10 @@ function Home() {
               <h6>Ways to support us</h6>
               <div className="support-grid">
                 <a href='/membership'>
-                <div className="support-card">
-                  <i className="fas fa-user"></i>
-                  <p>Become a Member</p>
-                </div>
+                  <div className="support-card">
+                    <i className="fas fa-user"></i>
+                    <p>Become a Member</p>
+                  </div>
                 </a>
                 <div className="support-card">
                   <i className="fas fa-bullhorn"></i>

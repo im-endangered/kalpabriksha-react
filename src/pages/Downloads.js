@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { Helmet } from 'react-helmet';
 import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import HeaderSeparator from '../components/HeaderSeparator';
@@ -43,6 +44,12 @@ const Downloads = () => {
 
   return (
     <>
+      <Helmet>
+        <title>Downloads | Your Site Name</title>
+        <meta name="description" content="Download official documents, reports, regulations, and summaries from our organization." />
+        <meta name="keywords" content="downloads, reports, documents, AGM, summary, regulations, pdf" />
+      </Helmet>
+
       <Navbar />
       <HeaderSeparator title="Downloads" breadcrumb={[{ name: 'Home', link: '/' }, { name: 'Downloads' }]} />
       <div className="container py-4">
@@ -88,14 +95,12 @@ const Downloads = () => {
             <tbody>
               {paginatedData.length > 0 ? (
                 paginatedData.map((doc, index) => (
-                  <tr key={doc.id}>
+                  <tr key={doc.link}>
                     <td>{startIndex + index + 1}</td>
                     <td className="text-start">{doc.title}</td>
                     <td>{doc.category}</td>
                     <td>
-                      <div 
-                      style={{gap: '10px'}}
-                      className="d-flex justify-content-center gap-2">
+                      <div className="d-flex justify-content-center gap-2">
                         <a
                           href={doc.link}
                           target="_blank"
@@ -124,7 +129,6 @@ const Downloads = () => {
           </table>
         </div>
 
-        {/* Pagination controls */}
         <div className="d-flex justify-content-between align-items-center mt-3">
           <div>
             Showing {startIndex + 1} to {Math.min(startIndex + itemsPerPage, filteredData.length)} of {filteredData.length} entries
