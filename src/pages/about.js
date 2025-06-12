@@ -13,6 +13,8 @@ import nitamImage from '../assets/images/team/nitam.png';
 import pankajImage from '../assets/images/team/pankaj.png';
 import rejinImage from '../assets/images/team/REjin.jpg';
 
+import yuwantar from "../assets/images/slider/pratidhwani.png";
+
 const About = () => {
   const [flippedCardIndex, setFlippedCardIndex] = useState(null);
   const navigate = useNavigate();
@@ -52,7 +54,7 @@ const About = () => {
         <meta property="og:description" content="Know more about our story, goals, and team behind Kalpabriksha Nepal – empowering youths across Nepal." />
         <meta property="og:type" content="website" />
         <meta property="og:url" content="https://kalpabriksha.org.np/about" />
-        <meta property="og:image" content="/logo192.png" />
+        <meta property="og:image" content={yuwantar} />
       </Helmet>
 
       <Navbar />

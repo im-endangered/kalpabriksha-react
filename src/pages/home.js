@@ -4,6 +4,7 @@ import Navbar from '../components/navbar';
 import Footer from '../components/footer';
 import Slider from '../components/slider';
 import '../assets/styles/home.css';
+import circularLogo from "../assets/images/circular.png";
 
 function Home() {
   return (
@@ -15,8 +16,8 @@ function Home() {
         <meta property="og:title" content="Home | Kalpabriksha Nepal" />
         <meta property="og:description" content="Empowering visionary youths of Nepal through community, mentorship, and support systems." />
         <meta property="og:type" content="website" />
-        <meta property="og:url" content="https://kalpabriksha.org.np/" />
-        <meta property="og:image" content="/logo192.png" />
+        <meta property="og:url" content="https://kalpabrikshanepal.org.np/" />
+        <meta property="og:image" content={circularLogo} />
       </Helmet>
 
       <Navbar />
